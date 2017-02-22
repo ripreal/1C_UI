@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="PlanOfCharacteristicKindPredefinedItems" version="2.3">
+	<Item id="6b584d49-38e0-4841-b4aa-672a713314e7">
+		<Name>Стоимость</Name>
+		<Code/>
+		<Description>Стоимость</Description>
+		<Type>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>17</v8:Digits>
+				<v8:FractionDigits>5</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</Type>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

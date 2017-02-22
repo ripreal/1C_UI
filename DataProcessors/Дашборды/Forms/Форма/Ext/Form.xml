@@ -1,0 +1,4507 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<ScalingMode>Normal</ScalingMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Шапка" id="354">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="355"/>
+			<ChildItems>
+				<UsualGroup name="Действия" id="273">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действия</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действия</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ДействияРасширеннаяПодсказка" id="274"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКнопкиДействий" id="281">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки действий</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки действий</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКнопкиДействийРасширеннаяПодсказка" id="282"/>
+							<ChildItems>
+								<PictureDecoration name="ВводСредсвЭкспанд" id="278">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>CommonPicture.СтрелкаВниз</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<ContextMenu name="ВводСредсвЭкспандКонтекстноеМеню" id="279"/>
+									<ExtendedTooltip name="ВводСредсвЭкспандРасширеннаяПодсказка" id="280"/>
+									<Events>
+										<Event name="Click">Декорация2Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="ВводСредств" id="270">
+									<Font ref="style:NormalTextFont" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доход</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ВводСредствКонтекстноеМеню" id="271"/>
+									<ExtendedTooltip name="ВводСредствРасширеннаяПодсказка" id="272"/>
+									<Events>
+										<Event name="Click">ВводСредствНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<PictureDecoration name="ВыводСредствЭкспанд" id="316">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>CommonPicture.СтрелкаВниз</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<ContextMenu name="ВыводСредствЭкспандКонтекстноеМеню" id="317"/>
+									<ExtendedTooltip name="ВыводСредствЭкспандРасширеннаяПодсказка" id="318"/>
+									<Events>
+										<Event name="Click">Декорация2Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="ВыводСредств" id="267">
+									<Font ref="style:NormalTextFont" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расход</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ВыводСредствКонтекстноеМеню" id="268"/>
+									<ExtendedTooltip name="ВыводСредствРасширеннаяПодсказка" id="269"/>
+									<Events>
+										<Event name="Click">ВыводСредствНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<PictureDecoration name="ПереводСредствЭкспанд" id="319">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Hyperlink>true</Hyperlink>
+									<Picture>
+										<xr:Ref>CommonPicture.СтрелкаВниз</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<ContextMenu name="ПереводСредствЭкспандКонтекстноеМеню" id="320"/>
+									<ExtendedTooltip name="ПереводСредствЭкспандРасширеннаяПодсказка" id="321"/>
+									<Events>
+										<Event name="Click">Декорация2Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="ПереводМеждуЭПС" id="275">
+									<Font ref="style:NormalTextFont" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перевод</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<ContextMenu name="ПереводМеждуЭПСКонтекстноеМеню" id="276"/>
+									<ExtendedTooltip name="ПереводМеждуЭПСРасширеннаяПодсказка" id="277"/>
+									<Events>
+										<Event name="Click">ПереводМеждуЭПСНажатие</Event>
+									</Events>
+								</LabelDecoration>
+								<Button name="ОбновитьДанныеДействия" id="519">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОбновитьДанные</CommandName>
+									<ExtendedTooltip name="ОбновитьДанныеДействияРасширеннаяПодсказка" id="520"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСписокДокументов" id="283">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список документов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа список документов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>None</ToolTipRepresentation>
+							<Height>5</Height>
+							<Group>Vertical</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСписокДокументовРасширеннаяПодсказка" id="284"/>
+							<ChildItems>
+								<Table name="СписокДокументовДоход" id="709">
+									<Representation>List</Representation>
+									<Visible>false</Visible>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>СписокДокументовДоход</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СписокДокументовДоходКонтекстноеМеню" id="710">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="СписокДокументовДоходКонтекстноеМенюДобавить" id="806">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовДоход.StandardCommand.Add</CommandName>
+												<ExtendedTooltip name="СписокДокументовДоходКонтекстноеМенюДобавитьРасширеннаяПодсказка" id="807"/>
+											</Button>
+											<Button name="СписокДокументовДоходКонтекстноеМенюСкопировать" id="808">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовДоход.StandardCommand.Copy</CommandName>
+												<ExtendedTooltip name="СписокДокументовДоходКонтекстноеМенюСкопироватьРасширеннаяПодсказка" id="809"/>
+											</Button>
+											<Button name="СписокДокументовДоходКонтекстноеМенюПеревестиВЧерновик" id="814">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПеревестиВЧерновик</CommandName>
+												<ExtendedTooltip name="СписокДокументовДоходКонтекстноеМенюПеревестиВЧерновикРасширеннаяПодсказка" id="815"/>
+											</Button>
+											<Button name="СписокДокументовДоходКонтекстноеМенюУдалитьДокументСписка" id="816">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УдалитьДокументСписка</CommandName>
+												<ExtendedTooltip name="СписокДокументовДоходКонтекстноеМенюУдалитьДокументСпискаРасширеннаяПодсказка" id="817"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="СписокДокументовДоходКоманднаяПанель" id="711">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="СписокДокументовДоходДобавить" id="810">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовДоход.StandardCommand.Add</CommandName>
+												<ExtendedTooltip name="СписокДокументовДоходДобавитьРасширеннаяПодсказка" id="811"/>
+											</Button>
+											<Button name="СписокДокументовДоходСкопировать" id="812">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовДоход.StandardCommand.Copy</CommandName>
+												<ExtendedTooltip name="СписокДокументовДоходСкопироватьРасширеннаяПодсказка" id="813"/>
+											</Button>
+											<Button name="СписокДокументовДоходПеревестиВЧерновик" id="745">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПеревестиВЧерновик</CommandName>
+												<ExtendedTooltip name="СписокДокументовДоходПеревестиВЧерновикРасширеннаяПодсказка" id="746"/>
+											</Button>
+											<Button name="УдалитьДокументСписка" id="751">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УдалитьДокументСписка</CommandName>
+												<ExtendedTooltip name="УдалитьДокументСпискаРасширеннаяПодсказка" id="752"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СписокДокументовДоходРасширеннаяПодсказка" id="712"/>
+									<SearchStringAddition name="СписокДокументовДоходСтрокаПоиска" id="713">
+										<AdditionSource>
+											<Item>СписокДокументовДоход</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДокументовДоходСтрокаПоискаКонтекстноеМеню" id="714"/>
+										<ExtendedTooltip name="СписокДокументовДоходСтрокаПоискаРасширеннаяПодсказка" id="715"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокДокументовДоходСостояниеПросмотра" id="716">
+										<AdditionSource>
+											<Item>СписокДокументовДоход</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДокументовДоходСостояниеПросмотраКонтекстноеМеню" id="717"/>
+										<ExtendedTooltip name="СписокДокументовДоходСостояниеПросмотраРасширеннаяПодсказка" id="718"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокДокументовДоходУправлениеПоиском" id="719">
+										<AdditionSource>
+											<Item>СписокДокументовДоход</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДокументовДоходУправлениеПоискомКонтекстноеМеню" id="720"/>
+										<ExtendedTooltip name="СписокДокументовДоходУправлениеПоискомРасширеннаяПодсказка" id="721"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnEditEnd">СписокДокументовДоходПриОкончанииРедактирования</Event>
+										<Event name="Selection">СписокДокументовДоходВыбор</Event>
+										<Event name="BeforeDeleteRow">СписокДокументовДоходПередУдалением</Event>
+										<Event name="OnStartEdit">СписокДокументовДоходПриНачалеРедактирования</Event>
+									</Events>
+									<ChildItems>
+										<PictureField name="СписокДокументовДоходСостояниеДокумента" id="731">
+											<DataPath>СписокДокументовДоход.СостояниеДокумента</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>1</MaxWidth>
+											<ContextMenu name="СписокДокументовДоходСостояниеДокументаКонтекстноеМеню" id="732"/>
+											<ExtendedTooltip name="СписокДокументовДоходСостояниеДокументаРасширеннаяПодсказка" id="733"/>
+										</PictureField>
+										<InputField name="СписокДокументовДоходДата" id="722">
+											<DataPath>СписокДокументовДоход.Дата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокДокументовДоходДатаКонтекстноеМеню" id="723"/>
+											<ExtendedTooltip name="СписокДокументовДоходДатаРасширеннаяПодсказка" id="724"/>
+										</InputField>
+										<InputField name="СписокДокументовДоходВалюта" id="725">
+											<DataPath>СписокДокументовДоход.Валюта</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>4</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="СписокДокументовДоходВалютаКонтекстноеМеню" id="726"/>
+											<ExtendedTooltip name="СписокДокументовДоходВалютаРасширеннаяПодсказка" id="727"/>
+										</InputField>
+										<InputField name="СписокДокументовДоходСумма" id="728">
+											<DataPath>СписокДокументовДоход.Сумма</DataPath>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>7</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="СписокДокументовДоходСуммаКонтекстноеМеню" id="729"/>
+											<ExtendedTooltip name="СписокДокументовДоходСуммаРасширеннаяПодсказка" id="730"/>
+										</InputField>
+										<InputField name="СписокДокументовДоходПлатежнаяСистема" id="734">
+											<DataPath>СписокДокументовДоход.ПлатежнаяСистема</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокДокументовДоходПлатежнаяСистемаКонтекстноеМеню" id="735"/>
+											<ExtendedTooltip name="СписокДокументовДоходПлатежнаяСистемаРасширеннаяПодсказка" id="736"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="СписокДокументовРасход" id="753">
+									<Representation>List</Representation>
+									<Visible>false</Visible>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>СписокДокументовРасход</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СписокДокументовРасходКонтекстноеМеню" id="754">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="СписокДокументовРасходКонтекстноеМенюДобавить" id="818">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовРасход.StandardCommand.Add</CommandName>
+												<ExtendedTooltip name="СписокДокументовРасходКонтекстноеМенюДобавитьРасширеннаяПодсказка" id="819"/>
+											</Button>
+											<Button name="СписокДокументовРасходКонтекстноеМенюСкопировать" id="820">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовРасход.StandardCommand.Copy</CommandName>
+												<ExtendedTooltip name="СписокДокументовРасходКонтекстноеМенюСкопироватьРасширеннаяПодсказка" id="821"/>
+											</Button>
+											<Button name="СписокДокументовРасходКонтекстноеМенюПеревестиВЧерновик" id="822">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПеревестиВЧерновик</CommandName>
+												<ExtendedTooltip name="СписокДокументовРасходКонтекстноеМенюПеревестиВЧерновикРасширеннаяПодсказка" id="823"/>
+											</Button>
+											<Button name="СписокДокументовРасходКонтекстноеМенюУдалитьДокументСписка" id="824">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УдалитьДокументСписка</CommandName>
+												<ExtendedTooltip name="СписокДокументовРасходКонтекстноеМенюУдалитьДокументСпискаРасширеннаяПодсказка" id="825"/>
+											</Button>
+										</ChildItems>
+									</ContextMenu>
+									<AutoCommandBar name="СписокДокументовРасходКоманднаяПанель" id="755">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="СписокДокументовРасходДобавить" id="826">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовРасход.StandardCommand.Add</CommandName>
+												<ExtendedTooltip name="СписокДокументовРасходДобавитьРасширеннаяПодсказка" id="827"/>
+											</Button>
+											<Button name="СписокДокументовРасходСкопировать" id="828">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовРасход.StandardCommand.Copy</CommandName>
+												<ExtendedTooltip name="СписокДокументовРасходСкопироватьРасширеннаяПодсказка" id="829"/>
+											</Button>
+											<Button name="СписокДокументовРасходПеревестиВЧерновик" id="830">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПеревестиВЧерновик</CommandName>
+												<ExtendedTooltip name="СписокДокументовРасходПеревестиВЧерновикРасширеннаяПодсказка" id="831"/>
+											</Button>
+											<Button name="СписокДокументовРасходУдалитьДокументСписка" id="832">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УдалитьДокументСписка</CommandName>
+												<ExtendedTooltip name="СписокДокументовРасходУдалитьДокументСпискаРасширеннаяПодсказка" id="833"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СписокДокументовРасходРасширеннаяПодсказка" id="756"/>
+									<SearchStringAddition name="СписокДокументовРасходСтрокаПоиска" id="757">
+										<AdditionSource>
+											<Item>СписокДокументовРасход</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДокументовРасходСтрокаПоискаКонтекстноеМеню" id="758"/>
+										<ExtendedTooltip name="СписокДокументовРасходСтрокаПоискаРасширеннаяПодсказка" id="759"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокДокументовРасходСостояниеПросмотра" id="760">
+										<AdditionSource>
+											<Item>СписокДокументовРасход</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДокументовРасходСостояниеПросмотраКонтекстноеМеню" id="761"/>
+										<ExtendedTooltip name="СписокДокументовРасходСостояниеПросмотраРасширеннаяПодсказка" id="762"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокДокументовРасходУправлениеПоиском" id="763">
+										<AdditionSource>
+											<Item>СписокДокументовРасход</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДокументовРасходУправлениеПоискомКонтекстноеМеню" id="764"/>
+										<ExtendedTooltip name="СписокДокументовРасходУправлениеПоискомРасширеннаяПодсказка" id="765"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnEditEnd">СписокДокументовРасходПриОкончанииРедактирования</Event>
+										<Event name="Selection">СписокДокументовРасходВыбор</Event>
+										<Event name="BeforeDeleteRow">СписокДокументовРасходПередУдалением</Event>
+										<Event name="OnStartEdit">СписокДокументовРасходПриНачалеРедактирования</Event>
+									</Events>
+									<ChildItems>
+										<PictureField name="СписокДокументовРасходСостояниеДокумента" id="769">
+											<DataPath>СписокДокументовРасход.СостояниеДокумента</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ContextMenu name="СписокДокументовРасходСостояниеДокументаКонтекстноеМеню" id="770"/>
+											<ExtendedTooltip name="СписокДокументовРасходСостояниеДокументаРасширеннаяПодсказка" id="771"/>
+										</PictureField>
+										<InputField name="СписокДокументовРасходДата" id="766">
+											<DataPath>СписокДокументовРасход.Дата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокДокументовРасходДатаКонтекстноеМеню" id="767"/>
+											<ExtendedTooltip name="СписокДокументовРасходДатаРасширеннаяПодсказка" id="768"/>
+										</InputField>
+										<InputField name="СписокДокументовРасходВалюта" id="775">
+											<DataPath>СписокДокументовРасход.Валюта</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>5</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<ContextMenu name="СписокДокументовРасходВалютаКонтекстноеМеню" id="776"/>
+											<ExtendedTooltip name="СписокДокументовРасходВалютаРасширеннаяПодсказка" id="777"/>
+										</InputField>
+										<InputField name="СписокДокументовРасходСумма" id="781">
+											<DataPath>СписокДокументовРасход.Сумма</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокДокументовРасходСуммаКонтекстноеМеню" id="782"/>
+											<ExtendedTooltip name="СписокДокументовРасходСуммаРасширеннаяПодсказка" id="783"/>
+										</InputField>
+										<CheckBoxField name="СписокДокументовРасходИнвестированыВПроект" id="778">
+											<DataPath>СписокДокументовРасход.ИнвестированыВПроект</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Инвестированы</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="СписокДокументовРасходИнвестированыВПроектКонтекстноеМеню" id="779"/>
+											<ExtendedTooltip name="СписокДокументовРасходИнвестированыВПроектРасширеннаяПодсказка" id="780"/>
+										</CheckBoxField>
+										<InputField name="СписокДокументовРасходОбъектИнвестиций" id="787">
+											<DataPath>СписокДокументовРасход.ОбъектИнвестиций</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокДокументовРасходОбъектИнвестицийКонтекстноеМеню" id="788"/>
+											<ExtendedTooltip name="СписокДокументовРасходОбъектИнвестицийРасширеннаяПодсказка" id="789"/>
+										</InputField>
+										<InputField name="СписокДокументовРасходПлатежнаяСистема" id="956">
+											<DataPath>СписокДокументовРасход.ПлатежнаяСистема</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокДокументовРасходПлатежнаяСистемаКонтекстноеМеню" id="957"/>
+											<ExtendedTooltip name="СписокДокументовРасходПлатежнаяСистемаРасширеннаяПодсказка" id="958"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+								<Table name="СписокДокументовПеревод" id="834">
+									<Representation>List</Representation>
+									<Visible>false</Visible>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>СписокДокументовПеревод</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="СписокДокументовПереводКонтекстноеМеню" id="835"/>
+									<AutoCommandBar name="СписокДокументовПереводКоманднаяПанель" id="836">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="СписокДокументовПереводДобавить" id="959">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовПеревод.StandardCommand.Add</CommandName>
+												<ExtendedTooltip name="СписокДокументовПереводДобавитьРасширеннаяПодсказка" id="960"/>
+											</Button>
+											<Button name="СписокДокументовПереводПеревестиВЧерновик" id="878">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ПеревестиВЧерновик</CommandName>
+												<ExtendedTooltip name="СписокДокументовПереводПеревестиВЧерновикРасширеннаяПодсказка" id="879"/>
+											</Button>
+											<Button name="СписокДокументовПереводУдалитьДокументСписка" id="880">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.УдалитьДокументСписка</CommandName>
+												<ExtendedTooltip name="СписокДокументовПереводУдалитьДокументСпискаРасширеннаяПодсказка" id="881"/>
+											</Button>
+											<Button name="СписокДокументовПереводСкопировать" id="961">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Item.СписокДокументовПеревод.StandardCommand.Copy</CommandName>
+												<ExtendedTooltip name="СписокДокументовПереводСкопироватьРасширеннаяПодсказка" id="962"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="СписокДокументовПереводРасширеннаяПодсказка" id="837"/>
+									<SearchStringAddition name="СписокДокументовПереводСтрокаПоиска" id="838">
+										<AdditionSource>
+											<Item>СписокДокументовПеревод</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДокументовПереводСтрокаПоискаКонтекстноеМеню" id="839"/>
+										<ExtendedTooltip name="СписокДокументовПереводСтрокаПоискаРасширеннаяПодсказка" id="840"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="СписокДокументовПереводСостояниеПросмотра" id="841">
+										<AdditionSource>
+											<Item>СписокДокументовПеревод</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДокументовПереводСостояниеПросмотраКонтекстноеМеню" id="842"/>
+										<ExtendedTooltip name="СписокДокументовПереводСостояниеПросмотраРасширеннаяПодсказка" id="843"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="СписокДокументовПереводУправлениеПоиском" id="844">
+										<AdditionSource>
+											<Item>СписокДокументовПеревод</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="СписокДокументовПереводУправлениеПоискомКонтекстноеМеню" id="845"/>
+										<ExtendedTooltip name="СписокДокументовПереводУправлениеПоискомРасширеннаяПодсказка" id="846"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="OnEditEnd">СписокДокументовПереводПриОкончанииРедактирования</Event>
+										<Event name="Selection">СписокДокументовПереводВыбор</Event>
+										<Event name="BeforeDeleteRow">СписокДокументовПереводПередУдалением</Event>
+										<Event name="OnStartEdit">СписокДокументовПереводПриНачалеРедактирования</Event>
+									</Events>
+									<ChildItems>
+										<PictureField name="СписокДокументовПереводСостояниеДокумента" id="850">
+											<DataPath>СписокДокументовПеревод.СостояниеДокумента</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<Width>1</Width>
+											<ContextMenu name="СписокДокументовПереводСостояниеДокументаКонтекстноеМеню" id="851"/>
+											<ExtendedTooltip name="СписокДокументовПереводСостояниеДокументаРасширеннаяПодсказка" id="852"/>
+										</PictureField>
+										<InputField name="СписокДокументовПереводДата" id="847">
+											<DataPath>СписокДокументовПеревод.Дата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="СписокДокументовПереводДатаКонтекстноеМеню" id="848"/>
+											<ExtendedTooltip name="СписокДокументовПереводДатаРасширеннаяПодсказка" id="849"/>
+										</InputField>
+										<ColumnGroup name="СписокДокументовПереводГруппа1" id="868">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Из</v8:content>
+												</v8:item>
+											</Title>
+											<Width>5</Width>
+											<HorizontalStretch>false</HorizontalStretch>
+											<ShowInHeader>true</ShowInHeader>
+											<ExtendedTooltip name="СписокДокументовПереводГруппа1РасширеннаяПодсказка" id="869"/>
+											<ChildItems>
+												<InputField name="СписокДокументовПереводПлатежнаяСистемаИсточник" id="872">
+													<DataPath>СписокДокументовПеревод.ПлатежнаяСистемаИсточник</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ShowInHeader>false</ShowInHeader>
+													<ContextMenu name="СписокДокументовПереводПлатежнаяСистемаИсточникКонтекстноеМеню" id="873"/>
+													<ExtendedTooltip name="СписокДокументовПереводПлатежнаяСистемаИсточникРасширеннаяПодсказка" id="874"/>
+												</InputField>
+												<InputField name="СписокДокументовПереводВалютаИсточник" id="856">
+													<DataPath>СписокДокументовПеревод.ВалютаИсточник</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Из</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ShowInHeader>false</ShowInHeader>
+													<Width>7</Width>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="СписокДокументовПереводВалютаИсточникКонтекстноеМеню" id="857"/>
+													<ExtendedTooltip name="СписокДокументовПереводВалютаИсточникРасширеннаяПодсказка" id="858"/>
+												</InputField>
+												<InputField name="СписокДокументовПереводСуммаИсточник" id="859">
+													<DataPath>СписокДокументовПеревод.СуммаИсточник</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ShowInHeader>false</ShowInHeader>
+													<ContextMenu name="СписокДокументовПереводСуммаИсточникКонтекстноеМеню" id="860"/>
+													<ExtendedTooltip name="СписокДокументовПереводСуммаИсточникРасширеннаяПодсказка" id="861"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="СписокДокументовПереводГруппа2" id="870">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>В</v8:content>
+												</v8:item>
+											</Title>
+											<ShowInHeader>true</ShowInHeader>
+											<ExtendedTooltip name="СписокДокументовПереводГруппа2РасширеннаяПодсказка" id="871"/>
+											<ChildItems>
+												<InputField name="СписокДокументовПереводПлатежнаяСистемаПриемник" id="875">
+													<DataPath>СписокДокументовПеревод.ПлатежнаяСистемаПриемник</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ShowInHeader>false</ShowInHeader>
+													<ContextMenu name="СписокДокументовПереводПлатежнаяСистемаПриемникКонтекстноеМеню" id="876"/>
+													<ExtendedTooltip name="СписокДокументовПереводПлатежнаяСистемаПриемникРасширеннаяПодсказка" id="877"/>
+												</InputField>
+												<InputField name="СписокДокументовПереводВалютаПриемник" id="862">
+													<DataPath>СписокДокументовПеревод.ВалютаПриемник</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>В</v8:content>
+														</v8:item>
+													</Title>
+													<EditMode>EnterOnInput</EditMode>
+													<ShowInHeader>false</ShowInHeader>
+													<Width>7</Width>
+													<HorizontalStretch>false</HorizontalStretch>
+													<ContextMenu name="СписокДокументовПереводВалютаПриемникКонтекстноеМеню" id="863"/>
+													<ExtendedTooltip name="СписокДокументовПереводВалютаПриемникРасширеннаяПодсказка" id="864"/>
+												</InputField>
+												<InputField name="СписокДокументовПереводСуммаПриемник" id="865">
+													<DataPath>СписокДокументовПеревод.СуммаПриемник</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ShowInHeader>false</ShowInHeader>
+													<ContextMenu name="СписокДокументовПереводСуммаПриемникКонтекстноеМеню" id="866"/>
+													<ExtendedTooltip name="СписокДокументовПереводСуммаПриемникРасширеннаяПодсказка" id="867"/>
+												</InputField>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</Table>
+								<UsualGroup name="ГруппаИтоги" id="635">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итоги</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа итоги</v8:content>
+										</v8:item>
+									</ToolTip>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>web:Gainsboro</BackColor>
+									<ExtendedTooltip name="ГруппаИтогиРасширеннаяПодсказка" id="636"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаПлатежнаяСистема1" id="637">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа платежная система1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа платежная система1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПлатежнаяСистема1РасширеннаяПодсказка" id="638"/>
+											<ChildItems>
+												<LabelDecoration name="ПлатежнаяСистема1" id="639">
+													<Width>15</Width>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;Платежная система&gt;</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПлатежнаяСистема1КонтекстноеМеню" id="640"/>
+													<ExtendedTooltip name="ПлатежнаяСистема1РасширеннаяПодсказка" id="641"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВалюта11" id="644">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВалюта11РасширеннаяПодсказка" id="645"/>
+													<ChildItems>
+														<LabelDecoration name="СредстваВалюта11" id="646">
+															<Width>4</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;RUB&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваВалюта11КонтекстноеМеню" id="647"/>
+															<ExtendedTooltip name="СредстваВалюта11РасширеннаяПодсказка" id="648"/>
+														</LabelDecoration>
+														<LabelDecoration name="СредстваСумма11" id="649">
+															<Width>6</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>9 999 999</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваСумма11КонтекстноеМеню" id="650"/>
+															<ExtendedTooltip name="СредстваСумма11РасширеннаяПодсказка" id="651"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВалюта12" id="882">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВалюта12РасширеннаяПодсказка" id="883"/>
+													<ChildItems>
+														<LabelDecoration name="СредстваВалюта12" id="884">
+															<Width>4</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;RUB&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваВалюта12КонтекстноеМеню" id="885"/>
+															<ExtendedTooltip name="СредстваВалюта12РасширеннаяПодсказка" id="886"/>
+														</LabelDecoration>
+														<LabelDecoration name="СредстваСумма12" id="887">
+															<Width>6</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>9 999 999</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваСумма12КонтекстноеМеню" id="888"/>
+															<ExtendedTooltip name="СредстваСумма12РасширеннаяПодсказка" id="889"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВалюта13" id="890">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВалюта13РасширеннаяПодсказка" id="891"/>
+													<ChildItems>
+														<LabelDecoration name="СредстваВалюта13" id="892">
+															<Width>4</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;RUB&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваВалюта13КонтекстноеМеню" id="893"/>
+															<ExtendedTooltip name="СредстваВалюта13РасширеннаяПодсказка" id="894"/>
+														</LabelDecoration>
+														<LabelDecoration name="СредстваСумма13" id="895">
+															<Width>6</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>9 999 999</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваСумма13КонтекстноеМеню" id="896"/>
+															<ExtendedTooltip name="СредстваСумма13РасширеннаяПодсказка" id="897"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПлатежнаяСистема2" id="898">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа платежная система1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа платежная система1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПлатежнаяСистема2РасширеннаяПодсказка" id="899"/>
+											<ChildItems>
+												<LabelDecoration name="ПлатежнаяСистема2" id="900">
+													<Width>15</Width>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;Платежная система&gt;</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПлатежнаяСистема2КонтекстноеМеню" id="901"/>
+													<ExtendedTooltip name="ПлатежнаяСистема2РасширеннаяПодсказка" id="902"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВалюта21" id="903">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВалюта21РасширеннаяПодсказка" id="904"/>
+													<ChildItems>
+														<LabelDecoration name="СредстваВалюта21" id="905">
+															<Width>4</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;RUB&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваВалюта21КонтекстноеМеню" id="906"/>
+															<ExtendedTooltip name="СредстваВалюта21РасширеннаяПодсказка" id="907"/>
+														</LabelDecoration>
+														<LabelDecoration name="СредстваСумма21" id="908">
+															<Width>6</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>9 999 999</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваСумма21КонтекстноеМеню" id="909"/>
+															<ExtendedTooltip name="СредстваСумма21РасширеннаяПодсказка" id="910"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВалюта22" id="911">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВалюта22РасширеннаяПодсказка" id="912"/>
+													<ChildItems>
+														<LabelDecoration name="СредстваВалюта22" id="913">
+															<Width>4</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;RUB&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваВалюта22КонтекстноеМеню" id="914"/>
+															<ExtendedTooltip name="СредстваВалюта22РасширеннаяПодсказка" id="915"/>
+														</LabelDecoration>
+														<LabelDecoration name="СредстваСумма22" id="916">
+															<Width>6</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>9 999 999</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваСумма22КонтекстноеМеню" id="917"/>
+															<ExtendedTooltip name="СредстваСумма22РасширеннаяПодсказка" id="918"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВалюта23" id="919">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВалюта23РасширеннаяПодсказка" id="920"/>
+													<ChildItems>
+														<LabelDecoration name="СредстваВалюта23" id="921">
+															<Width>4</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;RUB&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваВалюта23КонтекстноеМеню" id="922"/>
+															<ExtendedTooltip name="СредстваВалюта23РасширеннаяПодсказка" id="923"/>
+														</LabelDecoration>
+														<LabelDecoration name="СредстваСумма23" id="924">
+															<Width>6</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>9 999 999</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваСумма23КонтекстноеМеню" id="925"/>
+															<ExtendedTooltip name="СредстваСумма23РасширеннаяПодсказка" id="926"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПлатежнаяСистема3" id="927">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа платежная система1</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа платежная система1</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПлатежнаяСистема3РасширеннаяПодсказка" id="928"/>
+											<ChildItems>
+												<LabelDecoration name="ПлатежнаяСистема3" id="929">
+													<Width>15</Width>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;Платежная система&gt;</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ПлатежнаяСистема3КонтекстноеМеню" id="930"/>
+													<ExtendedTooltip name="ПлатежнаяСистема3РасширеннаяПодсказка" id="931"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВалюта31" id="932">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВалюта31РасширеннаяПодсказка" id="933"/>
+													<ChildItems>
+														<LabelDecoration name="СредстваВалюта31" id="934">
+															<Width>4</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;RUB&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваВалюта31КонтекстноеМеню" id="935"/>
+															<ExtendedTooltip name="СредстваВалюта31РасширеннаяПодсказка" id="936"/>
+														</LabelDecoration>
+														<LabelDecoration name="СредстваСумма31" id="937">
+															<Width>6</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>9 999 999</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваСумма31КонтекстноеМеню" id="938"/>
+															<ExtendedTooltip name="СредстваСумма31РасширеннаяПодсказка" id="939"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВалюта32" id="940">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВалюта32РасширеннаяПодсказка" id="941"/>
+													<ChildItems>
+														<LabelDecoration name="СредстваВалюта32" id="942">
+															<Width>4</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;RUB&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваВалюта32КонтекстноеМеню" id="943"/>
+															<ExtendedTooltip name="СредстваВалюта32РасширеннаяПодсказка" id="944"/>
+														</LabelDecoration>
+														<LabelDecoration name="СредстваСумма32" id="945">
+															<Width>6</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>9 999 999</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваСумма32КонтекстноеМеню" id="946"/>
+															<ExtendedTooltip name="СредстваСумма32РасширеннаяПодсказка" id="947"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВалюта33" id="948">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа валюта11</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВалюта33РасширеннаяПодсказка" id="949"/>
+													<ChildItems>
+														<LabelDecoration name="СредстваВалюта33" id="950">
+															<Width>4</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;RUB&gt;</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваВалюта33КонтекстноеМеню" id="951"/>
+															<ExtendedTooltip name="СредстваВалюта33РасширеннаяПодсказка" id="952"/>
+														</LabelDecoration>
+														<LabelDecoration name="СредстваСумма33" id="953">
+															<Width>6</Width>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>9 999 999</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="СредстваСумма33КонтекстноеМеню" id="954"/>
+															<ExtendedTooltip name="СредстваСумма33РасширеннаяПодсказка" id="955"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="Настройки" id="34">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="35"/>
+					<ChildItems>
+						<Button name="НастройкаПанелей" id="356">
+							<Type>CommandBarButton</Type>
+							<OnlyInAllActions>false</OnlyInAllActions>
+							<CommandName>Form.Command.НастройкаПанелей</CommandName>
+							<ExtendedTooltip name="НастройкаПанелейРасширеннаяПодсказка" id="357"/>
+						</Button>
+						<Button name="ВыгрузкаЗагрузкаКотировок" id="459">
+							<Type>CommandBarButton</Type>
+							<OnlyInAllActions>false</OnlyInAllActions>
+							<CommandName>Form.Command.ВыгрузкаЗагрузкаКотировок</CommandName>
+							<ExtendedTooltip name="ВыгрузкаЗагрузкаКотировокРасширеннаяПодсказка" id="460"/>
+						</Button>
+						<Button name="ЭкспортБД" id="371">
+							<Type>CommandBarButton</Type>
+							<OnlyInAllActions>false</OnlyInAllActions>
+							<CommandName>Form.Command.ЭкспортБД</CommandName>
+							<ExtendedTooltip name="ЭкспортБДРасширеннаяПодсказка" id="372"/>
+						</Button>
+						<Button name="ОбновитьДанные" id="7">
+							<Type>CommandBarButton</Type>
+							<Representation>Text</Representation>
+							<OnlyInAllActions>false</OnlyInAllActions>
+							<CommandName>Form.Command.ОбновитьДанные</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновить</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ОбновитьДанныеРасширеннаяПодсказка" id="8"/>
+						</Button>
+						<Button name="ИзменитьФорму" id="373">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
+							<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="374"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаАктуализация" id="478">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Актуализация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа актуализация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаАктуализацияРасширеннаяПодсказка" id="479"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаТребуетсяАктуализация" id="483">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется актуализация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа требуется актуализация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:ЦветФонаНекорректноеЗначение</BackColor>
+					<ExtendedTooltip name="ГруппаТребуетсяАктуализацияРасширеннаяПодсказка" id="484"/>
+					<ChildItems>
+						<LabelDecoration name="ТекстНеобходимостиАктуализации" id="480">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные курсов валют и товаров устарели. Рекомендуется обновить курсы (требуется интернет)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТекстНеобходимостиАктуализацииКонтекстноеМеню" id="481"/>
+							<ExtendedTooltip name="ТекстНеобходимостиАктуализацииРасширеннаяПодсказка" id="482"/>
+						</LabelDecoration>
+						<Button name="ОбновитьКурсы" id="485">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбновитьКурсы</CommandName>
+							<ExtendedTooltip name="ОбновитьКурсыРасширеннаяПодсказка" id="486"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИдетАктуализация" id="495">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Идет актуализация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа идет актуализация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИдетАктуализацияРасширеннаяПодсказка" id="496"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаОжиданияАктуализации" id="497">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка ожидания</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="КартинкаОжиданияАктуализацииКонтекстноеМеню" id="498"/>
+							<ExtendedTooltip name="КартинкаОжиданияАктуализацииРасширеннаяПодсказка" id="499"/>
+						</PictureDecoration>
+						<LabelDecoration name="ТекстИдетАктуализация" id="500">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Актуализация курсов...</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТекстИдетАктуализацияКонтекстноеМеню" id="501"/>
+							<ExtendedTooltip name="ТекстИдетАктуализацияРасширеннаяПодсказка" id="502"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаОшибкаАктуализации" id="509">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ошибка актуализации</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа идет актуализация</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОшибкаАктуализацииРасширеннаяПодсказка" id="510"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаОшибкаАктуализации" id="511">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка ожидания</v8:content>
+								</v8:item>
+							</Title>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.Ошибка32</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="КартинкаОшибкаАктуализацииКонтекстноеМеню" id="512"/>
+							<ExtendedTooltip name="КартинкаОшибкаАктуализацииРасширеннаяПодсказка" id="513"/>
+						</PictureDecoration>
+						<LabelDecoration name="ТекстОшибкаАктуализации" id="514">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Курсы не актуализированы. Проверьте соединение с интернетом</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТекстОшибкаАктуализацииКонтекстноеМеню" id="515"/>
+							<ExtendedTooltip name="ТекстОшибкаАктуализацииРасширеннаяПодсказка" id="516"/>
+						</LabelDecoration>
+						<Button name="ОбновитьКурсыОшибка" id="517">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОбновитьКурсы</CommandName>
+							<ExtendedTooltip name="ОбновитьКурсыОшибкаРасширеннаяПодсказка" id="518"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ИнформационнаяПанель" id="352">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационная панель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информационная панель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ИнформационнаяПанельРасширеннаяПодсказка" id="353"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаОжиданиеОбновленияОтчетов" id="487">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидание обновления отчетов</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа ожидание обновления отчетов</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>true</HorizontalStretch>
+					<HorizontalAlign>Left</HorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОжиданиеОбновленияОтчетовРасширеннаяПодсказка" id="488"/>
+					<ChildItems>
+						<PictureDecoration name="КартинкаОжидания" id="492">
+							<Width>2</Width>
+							<Height>1</Height>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Картинка ожидания</v8:content>
+								</v8:item>
+							</Title>
+							<PictureSize>Proportionally</PictureSize>
+							<Picture>
+								<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ContextMenu name="КартинкаОжиданияКонтекстноеМеню" id="493"/>
+							<ExtendedTooltip name="КартинкаОжиданияРасширеннаяПодсказка" id="494"/>
+						</PictureDecoration>
+						<LabelDecoration name="ТекстОбновлениеОтчетов" id="489">
+							<TextColor>style:ПоясняющийТекст</TextColor>
+							<Font ref="style:NormalTextFont" kind="StyleItem"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Обновление отчетов...</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТекстОбновлениеОтчетовКонтекстноеМеню" id="490"/>
+							<ExtendedTooltip name="ТекстОбновлениеОтчетовРасширеннаяПодсказка" id="491"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Средства" id="145">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Средства</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Средства</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="СредстваРасширеннаяПодсказка" id="146"/>
+					<ChildItems>
+						<UsualGroup name="СредстваЗаголовок" id="43">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Средства заголовок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Курсы валют заголовок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СредстваЗаголовокРасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<PictureDecoration name="ВсегоЗаработаноЗаголовок4" id="45">
+									<Width>2</Width>
+									<Height>1</Height>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Курсы валют заголовок1</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<PictureSize>AutoSize</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.Треугольник</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ВсегоЗаработаноЗаголовок4КонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="ВсегоЗаработаноЗаголовок4РасширеннаяПодсказка" id="47"/>
+									<Events>
+										<Event name="Click">Декорация1Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="ВсегоЗаработаноЗаголовок5" id="48">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="style:LargeTextFont" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Средства</v8:content>
+										</v8:item>
+									</Title>
+									<BackColor>style:ЦветРазделовПанелей</BackColor>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+									</Border>
+									<ContextMenu name="ВсегоЗаработаноЗаголовок5КонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ВсегоЗаработаноЗаголовок5РасширеннаяПодсказка" id="50"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="СредстваПанели" id="329">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Средства панели</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Средства панели</v8:content>
+								</v8:item>
+							</ToolTip>
+							<VerticalStretch>false</VerticalStretch>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="СредстваПанелиРасширеннаяПодсказка" id="330"/>
+							<ChildItems>
+								<UsualGroup name="ВсегоЗаработано" id="322">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Всего заработано</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Всего заработано</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>25</Width>
+									<Height>7</Height>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<ExtendedTooltip name="ВсегоЗаработаноРасширеннаяПодсказка" id="323"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаВсегоЗаработано" id="41">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Всего заработано</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа курсы валют</v8:content>
+												</v8:item>
+											</ToolTip>
+											<HorizontalStretch>true</HorizontalStretch>
+											<Group>Vertical</Group>
+											<ControlRepresentation>Picture</ControlRepresentation>
+											<Representation>NormalSeparation</Representation>
+											<United>false</United>
+											<ExtendedTooltip name="ГруппаВсегоЗаработаноРасширеннаяПодсказка" id="42"/>
+											<ChildItems>
+												<UsualGroup name="ВсегоЗаработаноРезультат" id="147">
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего заработано результат</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего заработано результат</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ChildItemsWidth>Equal</ChildItemsWidth>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ВсегоЗаработаноРезультатРасширеннаяПодсказка" id="148"/>
+													<ChildItems>
+														<UsualGroup name="ВсегоЗаработаноВалюта" id="149">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Всего заработано валюта</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Всего заработано валюта</v8:content>
+																</v8:item>
+															</ToolTip>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ВсегоЗаработаноВалютаРасширеннаяПодсказка" id="150"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияВалюта" id="151">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<TextColor>style:ButtonTextColor</TextColor>
+																	<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Валюта</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалютаКонтекстноеМеню" id="152"/>
+																	<ExtendedTooltip name="ДекорацияВалютаРасширеннаяПодсказка" id="153"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта0" id="154">
+																	<Visible>false</Visible>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>1</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Вал</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта0КонтекстноеМеню" id="155"/>
+																	<ExtendedTooltip name="ДекорацияВалюта0РасширеннаяПодсказка" id="156"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта1" id="173">
+																	<Visible>false</Visible>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>1</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Вал</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта1КонтекстноеМеню" id="174"/>
+																	<ExtendedTooltip name="ДекорацияВалюта1РасширеннаяПодсказка" id="175"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта2" id="182">
+																	<Visible>false</Visible>
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<Height>1</Height>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Вал</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта2КонтекстноеМеню" id="183"/>
+																	<ExtendedTooltip name="ДекорацияВалюта2РасширеннаяПодсказка" id="184"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ВсегоЗаработаноПоступление" id="157">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Всего заработано поступление</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа доходы</v8:content>
+																</v8:item>
+															</ToolTip>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ВсегоЗаработаноПоступлениеРасширеннаяПодсказка" id="158"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияПоступлениеШапка" id="159">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<TextColor>style:ButtonTextColor</TextColor>
+																	<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Поступление</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияПоступлениеШапкаКонтекстноеМеню" id="160"/>
+																	<ExtendedTooltip name="ДекорацияПоступлениеШапкаРасширеннаяПодсказка" id="161"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта0Поступление0" id="162">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<TextColor>style:ЦветПоступление</TextColor>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта0Поступление0КонтекстноеМеню" id="163"/>
+																	<ExtendedTooltip name="ДекорацияВалюта0Поступление0РасширеннаяПодсказка" id="164"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта1Поступление1" id="193">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<TextColor>style:ЦветПоступление</TextColor>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация валюта1 поступление1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта1Поступление1КонтекстноеМеню" id="194"/>
+																	<ExtendedTooltip name="ДекорацияВалюта1Поступление1РасширеннаяПодсказка" id="195"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта2Поступление2" id="196">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<TextColor>style:ЦветПоступление</TextColor>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация валюта2 поступление2</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта2Поступление2КонтекстноеМеню" id="197"/>
+																	<ExtendedTooltip name="ДекорацияВалюта2Поступление2РасширеннаяПодсказка" id="198"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ВсегоЗаработаноСписание" id="165">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Всего заработано списание</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа доходы</v8:content>
+																</v8:item>
+															</ToolTip>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ВсегоЗаработаноСписаниеРасширеннаяПодсказка" id="166"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияСписание" id="167">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<TextColor>style:ButtonTextColor</TextColor>
+																	<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Списание</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияСписаниеКонтекстноеМеню" id="168"/>
+																	<ExtendedTooltip name="ДекорацияСписаниеРасширеннаяПодсказка" id="169"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта0Списание0" id="170">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<TextColor>style:ЦветСписание</TextColor>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта0Списание0КонтекстноеМеню" id="171"/>
+																	<ExtendedTooltip name="ДекорацияВалюта0Списание0РасширеннаяПодсказка" id="172"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта1Списание1" id="199">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<TextColor>style:ЦветСписание</TextColor>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация валюта1 списание1</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта1Списание1КонтекстноеМеню" id="200"/>
+																	<ExtendedTooltip name="ДекорацияВалюта1Списание1РасширеннаяПодсказка" id="201"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта2Списание2" id="202">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<TextColor>style:ЦветСписание</TextColor>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Декорация валюта2 списание2</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта2Списание2КонтекстноеМеню" id="203"/>
+																	<ExtendedTooltip name="ДекорацияВалюта2Списание2РасширеннаяПодсказка" id="204"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ВсегоЗаработаноВОсновной" id="185">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Всего заработано списание</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа доходы</v8:content>
+																</v8:item>
+															</ToolTip>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ВсегоЗаработаноВОсновнойРасширеннаяПодсказка" id="186"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияВалютаОсновная" id="187">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<AutoMaxHeight>false</AutoMaxHeight>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<TextColor>style:ButtonTextColor</TextColor>
+																	<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+																	<Title formatted="false">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Остаток</v8:content>
+																		</v8:item>
+																	</Title>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалютаОсновнаяКонтекстноеМеню" id="188"/>
+																	<ExtendedTooltip name="ДекорацияВалютаОсновнаяРасширеннаяПодсказка" id="189"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта0ОсновнаяСумма0" id="190">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта0ОсновнаяСумма0КонтекстноеМеню" id="191"/>
+																	<ExtendedTooltip name="ДекорацияВалюта0ОсновнаяСумма0РасширеннаяПодсказка" id="192"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта1ОсновнаяСумма1" id="205">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта1ОсновнаяСумма1КонтекстноеМеню" id="206"/>
+																	<ExtendedTooltip name="ДекорацияВалюта1ОсновнаяСумма1РасширеннаяПодсказка" id="207"/>
+																</LabelDecoration>
+																<LabelDecoration name="ДекорацияВалюта2ОсновнаяСумма2" id="208">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<VerticalAlign>Top</VerticalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<Border width="1">
+																		<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+																	</Border>
+																	<ContextMenu name="ДекорацияВалюта2ОсновнаяСумма2КонтекстноеМеню" id="209"/>
+																	<ExtendedTooltip name="ДекорацияВалюта2ОсновнаяСумма2РасширеннаяПодсказка" id="210"/>
+																</LabelDecoration>
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ВсегоЗаработаноКурсНеактуален" id="214">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Всего заработано курс неактуален</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Курс не актуален!</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Group>Vertical</Group>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ВсегоЗаработаноКурсНеактуаленРасширеннаяПодсказка" id="215"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияВалютаОсновная1" id="216">
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<TextColor>style:ButtonTextColor</TextColor>
+																	<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+																	<HorizontalAlign>Center</HorizontalAlign>
+																	<BorderColor>#CDCDCD</BorderColor>
+																	<ContextMenu name="ДекорацияВалютаОсновная1КонтекстноеМеню" id="217"/>
+																	<ExtendedTooltip name="ДекорацияВалютаОсновная1РасширеннаяПодсказка" id="218"/>
+																</LabelDecoration>
+																<PictureDecoration name="ДекорацияВалюта0КурсНеактуален0" id="222">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Курс не актуален!</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<ContextMenu name="ДекорацияВалюта0КурсНеактуален0КонтекстноеМеню" id="223"/>
+																	<ExtendedTooltip name="ДекорацияВалюта0КурсНеактуален0РасширеннаяПодсказка" id="224"/>
+																</PictureDecoration>
+																<PictureDecoration name="ДекорацияВалюта1КурсНеактуален1" id="225">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Курс не актуален!</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ВосклицательныйЗнакКрасный</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ДекорацияВалюта1КурсНеактуален1КонтекстноеМеню" id="226"/>
+																	<ExtendedTooltip name="ДекорацияВалюта1КурсНеактуален1РасширеннаяПодсказка" id="227"/>
+																</PictureDecoration>
+																<PictureDecoration name="ДекорацияВалюта2КурсНеактуален2" id="228">
+																	<Visible>false</Visible>
+																	<Height>1</Height>
+																	<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+																	<ToolTip>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Курс не актуален!</v8:content>
+																		</v8:item>
+																	</ToolTip>
+																	<Picture>
+																		<xr:Ref>CommonPicture.ВосклицательныйЗнакКрасный</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ContextMenu name="ДекорацияВалюта2КурсНеактуален2КонтекстноеМеню" id="229"/>
+																	<ExtendedTooltip name="ДекорацияВалюта2КурсНеактуален2РасширеннаяПодсказка" id="230"/>
+																</PictureDecoration>
+															</ChildItems>
+														</UsualGroup>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="ВсегоЗаработаноПусто" id="503">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<HorizontalStretch>true</HorizontalStretch>
+													<VerticalStretch>true</VerticalStretch>
+													<TextColor>#8C8C8C</TextColor>
+													<Font ref="style:NormalTextFont" height="22" kind="StyleItem"/>
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего заработано</v8:content>
+														</v8:item>
+													</Title>
+													<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<HorizontalAlign>Center</HorizontalAlign>
+													<ContextMenu name="ВсегоЗаработаноПустоКонтекстноеМеню" id="504"/>
+													<ExtendedTooltip name="ВсегоЗаработаноПустоРасширеннаяПодсказка" id="505"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ДвижениеДенежныхСредств" id="324">
+									<Visible>false</Visible>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Движение денежных средств</v8:content>
+										</v8:item>
+									</Title>
+									<TitleTextColor>style:ButtonTextColor</TitleTextColor>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Движение денежных средств</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<ExtendedTooltip name="ДвижениеДенежныхСредствРасширеннаяПодсказка" id="325"/>
+									<ChildItems>
+										<SpreadSheetDocumentField name="ДвижениеСредствДиаграмма" id="326">
+											<DataPath>ДвижениеСредствРезультат</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<SkipOnInput>true</SkipOnInput>
+											<TitleLocation>None</TitleLocation>
+											<Width>1</Width>
+											<Height>4</Height>
+											<VerticalStretch>false</VerticalStretch>
+											<VerticalScrollBar>false</VerticalScrollBar>
+											<HorizontalScrollBar>false</HorizontalScrollBar>
+											<SelectionShowMode>WhenActive</SelectionShowMode>
+											<Output>Disable</Output>
+											<EnableStartDrag>false</EnableStartDrag>
+											<EnableDrag>false</EnableDrag>
+											<BorderColor>style:FormBackColor</BorderColor>
+											<ViewScalingMode>Normal</ViewScalingMode>
+											<ContextMenu name="ДвижениеСредствДиаграммаКонтекстноеМеню" id="327"/>
+											<ExtendedTooltip name="ДвижениеСредствДиаграммаРасширеннаяПодсказка" id="328"/>
+										</SpreadSheetDocumentField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ДинамикаКапитала" id="380">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Динамика капитала</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Всего заработано</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>25</Width>
+									<Height>7</Height>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<ExtendedTooltip name="ДинамикаКапиталаРасширеннаяПодсказка" id="381"/>
+									<ChildItems>
+										<UsualGroup name="ДинамикаКапиталаРезультат" id="384">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Динамика капитала результат</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Всего заработано результат</v8:content>
+												</v8:item>
+											</ToolTip>
+											<VerticalStretch>true</VerticalStretch>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<United>false</United>
+											<ChildItemsWidth>Equal</ChildItemsWidth>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ДинамикаКапиталаРезультатРасширеннаяПодсказка" id="385"/>
+											<ChildItems>
+												<UsualGroup name="ДинамикаКапиталаПериод" id="386">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Период</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Всего заработано валюта</v8:content>
+														</v8:item>
+													</ToolTip>
+													<VerticalStretch>true</VerticalStretch>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ДинамикаКапиталаПериодРасширеннаяПодсказка" id="387"/>
+													<ChildItems>
+														<LabelDecoration name="ДинамикаКапиталаПериод0" id="391">
+															<Height>1</Height>
+															<VerticalStretch>true</VerticalStretch>
+															<TextColor>style:ButtonTextColor</TextColor>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Сегодня</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<ContextMenu name="ДинамикаКапиталаПериод0КонтекстноеМеню" id="392"/>
+															<ExtendedTooltip name="ДинамикаКапиталаПериод0РасширеннаяПодсказка" id="393"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДинамикаКапиталаПериод1" id="394">
+															<Height>1</Height>
+															<VerticalStretch>true</VerticalStretch>
+															<TextColor>style:ButtonTextColor</TextColor>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Вчера</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<ContextMenu name="ДинамикаКапиталаПериод1КонтекстноеМеню" id="395"/>
+															<ExtendedTooltip name="ДинамикаКапиталаПериод1РасширеннаяПодсказка" id="396"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДинамикаКапиталаПериод2" id="428">
+															<Height>1</Height>
+															<VerticalStretch>true</VerticalStretch>
+															<TextColor>style:ButtonTextColor</TextColor>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>7 дней назад</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<ContextMenu name="ДинамикаКапиталаПериод2КонтекстноеМеню" id="429"/>
+															<ExtendedTooltip name="ДинамикаКапиталаПериод2РасширеннаяПодсказка" id="430"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДинамикаКапиталаПериод3" id="397">
+															<Height>1</Height>
+															<VerticalStretch>true</VerticalStretch>
+															<TextColor>style:ButtonTextColor</TextColor>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Месяц назад</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<ContextMenu name="ДинамикаКапиталаПериод3КонтекстноеМеню" id="398"/>
+															<ExtendedTooltip name="ДинамикаКапиталаПериод3РасширеннаяПодсказка" id="399"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ДинамикаКапиталаСумма" id="400">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Динамика капитала (сумма)</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа доходы</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ДинамикаКапиталаСуммаРасширеннаяПодсказка" id="401"/>
+													<ChildItems>
+														<LabelDecoration name="ДинамикаКапиталаСумма0" id="405">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Динамика капитала сумма0</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<VerticalAlign>Top</VerticalAlign>
+															<BorderColor>#CDCDCD</BorderColor>
+															<Border width="1">
+																<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+															</Border>
+															<ContextMenu name="ДинамикаКапиталаСумма0КонтекстноеМеню" id="406"/>
+															<ExtendedTooltip name="ДинамикаКапиталаСумма0РасширеннаяПодсказка" id="407"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДинамикаКапиталаСумма1" id="408">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация валюта1 поступление1</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<VerticalAlign>Top</VerticalAlign>
+															<BorderColor>#CDCDCD</BorderColor>
+															<Border width="1">
+																<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+															</Border>
+															<ContextMenu name="ДинамикаКапиталаСумма1КонтекстноеМеню" id="409"/>
+															<ExtendedTooltip name="ДинамикаКапиталаСумма1РасширеннаяПодсказка" id="410"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДинамикаКапиталаСумма2" id="411">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Динамика капитала сумма2</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<VerticalAlign>Top</VerticalAlign>
+															<BorderColor>#CDCDCD</BorderColor>
+															<Border width="1">
+																<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+															</Border>
+															<ContextMenu name="ДинамикаКапиталаСумма2КонтекстноеМеню" id="412"/>
+															<ExtendedTooltip name="ДинамикаКапиталаСумма2РасширеннаяПодсказка" id="413"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДинамикаКапиталаСумма3" id="431">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Динамика капитала сумма3</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<VerticalAlign>Top</VerticalAlign>
+															<BorderColor>#CDCDCD</BorderColor>
+															<Border width="1">
+																<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+															</Border>
+															<ContextMenu name="ДинамикаКапиталаСумма3КонтекстноеМеню" id="432"/>
+															<ExtendedTooltip name="ДинамикаКапиталаСумма3РасширеннаяПодсказка" id="433"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ДинамикаКапиталаИзм" id="414">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Динамика капитала (изм)</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа доходы</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ДинамикаКапиталаИзмРасширеннаяПодсказка" id="415"/>
+													<ChildItems>
+														<LabelDecoration name="ДинамикаКапиталаИзм0" id="419">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Динамика капитала изм0</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<VerticalAlign>Top</VerticalAlign>
+															<BorderColor>#CDCDCD</BorderColor>
+															<Border width="1">
+																<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+															</Border>
+															<ContextMenu name="ДинамикаКапиталаИзм0КонтекстноеМеню" id="420"/>
+															<ExtendedTooltip name="ДинамикаКапиталаИзм0РасширеннаяПодсказка" id="421"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДинамикаКапиталаИзм1" id="422">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Динамика капитала изм1</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<VerticalAlign>Top</VerticalAlign>
+															<BorderColor>#CDCDCD</BorderColor>
+															<Border width="1">
+																<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+															</Border>
+															<ContextMenu name="ДинамикаКапиталаИзм1КонтекстноеМеню" id="423"/>
+															<ExtendedTooltip name="ДинамикаКапиталаИзм1РасширеннаяПодсказка" id="424"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДинамикаКапиталаИзм2" id="425">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Динамика капитала изм2</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<VerticalAlign>Top</VerticalAlign>
+															<BorderColor>#CDCDCD</BorderColor>
+															<Border width="1">
+																<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+															</Border>
+															<ContextMenu name="ДинамикаКапиталаИзм2КонтекстноеМеню" id="426"/>
+															<ExtendedTooltip name="ДинамикаКапиталаИзм2РасширеннаяПодсказка" id="427"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДинамикаКапиталаИзм3" id="434">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Динамика капитала изм2</v8:content>
+																</v8:item>
+															</Title>
+															<HorizontalAlign>Center</HorizontalAlign>
+															<VerticalAlign>Top</VerticalAlign>
+															<BorderColor>#CDCDCD</BorderColor>
+															<Border width="1">
+																<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+															</Border>
+															<ContextMenu name="ДинамикаКапиталаИзм3КонтекстноеМеню" id="435"/>
+															<ExtendedTooltip name="ДинамикаКапиталаИзм3РасширеннаяПодсказка" id="436"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ДинамикаКапиталаКурсНеактуален" id="461">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Динамика капитала курс неактуален</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Курс не актуален!</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ДинамикаКапиталаКурсНеактуаленРасширеннаяПодсказка" id="462"/>
+													<ChildItems>
+														<PictureDecoration name="ДККурсНеактуален0" id="466">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ДККурс неактуален0</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Курс не актуален!</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="ДККурсНеактуален0КонтекстноеМеню" id="467"/>
+															<ExtendedTooltip name="ДККурсНеактуален0РасширеннаяПодсказка" id="468"/>
+														</PictureDecoration>
+														<PictureDecoration name="ДККурсНеактуален1" id="469">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ДККурс неактуален1</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Курс не актуален!</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Picture>
+																<xr:Ref>CommonPicture.ВосклицательныйЗнакКрасный</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДККурсНеактуален1КонтекстноеМеню" id="470"/>
+															<ExtendedTooltip name="ДККурсНеактуален1РасширеннаяПодсказка" id="471"/>
+														</PictureDecoration>
+														<PictureDecoration name="ДККурсНеактуален2" id="472">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>ДККурс неактуален2</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Курс не актуален!</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Picture>
+																<xr:Ref>CommonPicture.ВосклицательныйЗнакКрасный</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДККурсНеактуален2КонтекстноеМеню" id="473"/>
+															<ExtendedTooltip name="ДККурсНеактуален2РасширеннаяПодсказка" id="474"/>
+														</PictureDecoration>
+														<PictureDecoration name="ДККурсНеактуален3" id="475">
+															<Visible>false</Visible>
+															<Height>1</Height>
+															<Font ref="style:ШрифтСумма" kind="StyleItem"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Д к3 курс неактуален3</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Курс не актуален!</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Picture>
+																<xr:Ref>CommonPicture.ВосклицательныйЗнакКрасный</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДККурсНеактуален3КонтекстноеМеню" id="476"/>
+															<ExtendedTooltip name="ДККурсНеактуален3РасширеннаяПодсказка" id="477"/>
+														</PictureDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<LabelDecoration name="ДинамикаКапиталаПусто" id="506">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>true</VerticalStretch>
+											<TextColor>#8C8C8C</TextColor>
+											<Font ref="style:NormalTextFont" height="22" kind="StyleItem"/>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Динамика капитала</v8:content>
+												</v8:item>
+											</Title>
+											<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<HorizontalAlign>Center</HorizontalAlign>
+											<ContextMenu name="ДинамикаКапиталаПустоКонтекстноеМеню" id="507"/>
+											<ExtendedTooltip name="ДинамикаКапиталаПустоРасширеннаяПодсказка" id="508"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="СтоимостьКапитала" id="364">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость капитала</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стоимость капитала</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Width>25</Width>
+									<Height>7</Height>
+									<Group>Vertical</Group>
+									<Representation>NormalSeparation</Representation>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<ExtendedTooltip name="СтоимостьКапиталаРасширеннаяПодсказка" id="365"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаСтоимостьКапиталаЛегенда" id="369">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа стоимость капитала легенда</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа стоимость капитала легенда</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Horizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСтоимостьКапиталаЛегендаРасширеннаяПодсказка" id="370"/>
+										</UsualGroup>
+										<ChartField name="СтоимостьКапиталаДиаграмма" id="366">
+											<DataPath>СтоимостьКапиталаДиаграмма</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>40</Width>
+											<Height>4</Height>
+											<VerticalStretch>false</VerticalStretch>
+											<ContextMenu name="СтоимостьКапиталаДиаграммаКонтекстноеМеню" id="367"/>
+											<ExtendedTooltip name="СтоимостьКапиталаДиаграммаРасширеннаяПодсказка" id="368"/>
+										</ChartField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<LabelField name="ПериодДанныхДатаОкончания" id="211">
+							<DataPath>ДатаСейчас</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Данные на</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДЛФ=DDT</v8:content>
+								</v8:item>
+							</Format>
+							<ContextMenu name="ПериодДанныхДатаОкончанияКонтекстноеМеню" id="212"/>
+							<ExtendedTooltip name="ПериодДанныхДатаОкончанияРасширеннаяПодсказка" id="213"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Экономика" id="56">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экономика</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Экономика</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>NormalSeparation</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ЭкономикаРасширеннаяПодсказка" id="57"/>
+					<ChildItems>
+						<UsualGroup name="ЭкономикаЗаголовок" id="19">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Экономика заголовок</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Экономика заголовок</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЭкономикаЗаголовокРасширеннаяПодсказка" id="20"/>
+							<ChildItems>
+								<PictureDecoration name="КурсыВалютЗаголовок1" id="14">
+									<Width>2</Width>
+									<Height>1</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Курсы валют заголовок1</v8:content>
+										</v8:item>
+									</Title>
+									<Hyperlink>true</Hyperlink>
+									<PictureSize>AutoSize</PictureSize>
+									<Picture>
+										<xr:Ref>CommonPicture.Треугольник</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="КурсыВалютЗаголовок1КонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="КурсыВалютЗаголовок1РасширеннаяПодсказка" id="16"/>
+									<Events>
+										<Event name="Click">Декорация1Нажатие</Event>
+									</Events>
+								</PictureDecoration>
+								<LabelDecoration name="КурсыВалютЗаголовок2" id="28">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<Font ref="style:LargeTextFont" kind="StyleItem"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Экономика</v8:content>
+										</v8:item>
+									</Title>
+									<BackColor>style:ЦветРазделовПанелей</BackColor>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Underline</v8ui:style>
+									</Border>
+									<ContextMenu name="КурсыВалютЗаголовок2КонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="КурсыВалютЗаголовок2РасширеннаяПодсказка" id="30"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ЭкономикаПанели" id="12">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Экономика панели</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Экономика панели</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Behavior>Collapsible</Behavior>
+							<ControlRepresentation>Picture</ControlRepresentation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ЭкономикаПанелиРасширеннаяПодсказка" id="13"/>
+							<ChildItems>
+								<UsualGroup name="Группа1" id="455">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Курсы валют</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalStretch>false</VerticalStretch>
+									<Group>Horizontal</Group>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="456"/>
+									<ChildItems>
+										<UsualGroup name="КурсыВалют" id="243">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Курсы валют</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Курсы валют</v8:content>
+												</v8:item>
+											</ToolTip>
+											<VerticalStretch>false</VerticalStretch>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>style:ButtonBackColor</BackColor>
+											<ExtendedTooltip name="КурсыВалютРасширеннаяПодсказка" id="244"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаКурсыВалютЛегенда" id="26">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа курсы валют легенда</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа курсы валют легенда</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКурсыВалютЛегендаРасширеннаяПодсказка" id="27"/>
+												</UsualGroup>
+												<ChartField name="РезультатКурсыВалют" id="4">
+													<DataPath>ГрафикКурсовВалют</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>30</Width>
+													<VerticalStretch>false</VerticalStretch>
+													<ContextMenu name="РезультатКурсыВалютКонтекстноеМеню" id="5"/>
+													<ExtendedTooltip name="РезультатКурсыВалютРасширеннаяПодсказка" id="6"/>
+												</ChartField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ВиджетКурсаВалют" id="248">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Валюты сегодня</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Виджет курса валют</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>22</Width>
+											<HorizontalStretch>true</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<BackColor>style:ButtonBackColor</BackColor>
+											<ExtendedTooltip name="ВиджетКурсаВалютРасширеннаяПодсказка" id="249"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаВиджетКурсовВалютЦБГл" id="258">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБГл</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБГл</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Width>40</Width>
+													<VerticalStretch>false</VerticalStretch>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВиджетКурсовВалютЦБГлРасширеннаяПодсказка" id="259"/>
+												</UsualGroup>
+												<UsualGroup name="ГруппаВиджетКурсовВалютYahooГл" id="253">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБ</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБ</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Width>40</Width>
+													<VerticalStretch>false</VerticalStretch>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВиджетКурсовВалютYahooГлРасширеннаяПодсказка" id="254"/>
+												</UsualGroup>
+												<LabelDecoration name="Декорация3" id="250">
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;b&gt;&lt;bgcolorstyle -1&gt;&lt;colorstyle 0:283ce432-3553-4de9-94a2-ca9a590437f5&gt;Курсы покупки &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;b&gt;&lt;bgcolorstyle -1&gt;&lt;colorstyle 0:283ce432-3553-4de9-94a2-ca9a590437f5&gt;ЦБ РФ&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация3КонтекстноеМеню" id="251"/>
+													<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="252"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВиджетКурсовВалютЦБ" id="233">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБ</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБ</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Height>5</Height>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВиджетКурсовВалютЦБРасширеннаяПодсказка" id="234"/>
+												</UsualGroup>
+												<LabelDecoration name="Декорация4" id="260">
+													<HorizontalStretch>true</HorizontalStretch>
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;b&gt;&lt;bgcolorstyle -1&gt;&lt;colorstyle 0:283ce432-3553-4de9-94a2-ca9a590437f5&gt;Курсы покупки Yahoo&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация4КонтекстноеМеню" id="261"/>
+													<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="262"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВиджетКурсовВалютYahoo" id="263">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБ</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБ</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Width>9</Width>
+													<VerticalStretch>true</VerticalStretch>
+													<Group>Horizontal</Group>
+													<VerticalAlign>Top</VerticalAlign>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВиджетКурсовВалютYahooРасширеннаяПодсказка" id="264"/>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа2" id="457">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Курсы нефти</v8:content>
+										</v8:item>
+									</Title>
+									<VerticalStretch>false</VerticalStretch>
+									<Group>Horizontal</Group>
+									<BackColor>style:ButtonBackColor</BackColor>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="458"/>
+									<ChildItems>
+										<UsualGroup name="КурсыТоваров" id="331">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Курсы товаров</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Курсы товаров</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<BackColor>style:ButtonBackColor</BackColor>
+											<ExtendedTooltip name="КурсыТоваровРасширеннаяПодсказка" id="332"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаКурсыТоваровЛегенда" id="333">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа курсы товаров легенда</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа курсы валют легенда</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКурсыТоваровЛегендаРасширеннаяПодсказка" id="334"/>
+												</UsualGroup>
+												<ChartField name="РезультатКурсыТоваров" id="338">
+													<DataPath>ГрафикКурсовТоваров</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>30</Width>
+													<VerticalStretch>false</VerticalStretch>
+													<ContextMenu name="РезультатКурсыТоваровКонтекстноеМеню" id="339"/>
+													<ExtendedTooltip name="РезультатКурсыТоваровРасширеннаяПодсказка" id="340"/>
+												</ChartField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ВиджетКурсаТоваров" id="341">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Товары сегодня</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа виджеты курсов валют</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Width>22</Width>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<BackColor>style:ButtonBackColor</BackColor>
+											<ExtendedTooltip name="ВиджетКурсаТоваровРасширеннаяПодсказка" id="342"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаВиджетКурсаТоваровГл" id="343">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов товаров ЦБГл</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБГл</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВиджетКурсаТоваровГлРасширеннаяПодсказка" id="344"/>
+												</UsualGroup>
+												<LabelDecoration name="Декорация5" id="347">
+													<Title formatted="true">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>&lt;b&gt;&lt;bgcolorstyle -1&gt;&lt;colorstyle 0:283ce432-3553-4de9-94a2-ca9a590437f5&gt;Курсы нефти BRENT CRUDE&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация5КонтекстноеМеню" id="348"/>
+													<ExtendedTooltip name="Декорация5РасширеннаяПодсказка" id="349"/>
+												</LabelDecoration>
+												<UsualGroup name="ГруппаВиджетКурсаТоваров" id="350">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов товаров</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа виджет курсов валют ЦБ</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Horizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаВиджетКурсаТоваровРасширеннаяПодсказка" id="351"/>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПериодОтчетов" id="39">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа период отчетов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа период отчетов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>NormalSeparation</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПериодОтчетовРасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<LabelField name="ДатаОтчетов" id="9">
+									<DataPath>ПериодДанных</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<SkipOnInput>false</SkipOnInput>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>За период</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<Width>14</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДЛФ=DD</v8:content>
+										</v8:item>
+									</Format>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="ДатаОтчетовКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="ДатаОтчетовРасширеннаяПодсказка" id="11"/>
+									<Events>
+										<Event name="Click">ПериодНажатие</Event>
+									</Events>
+								</LabelField>
+								<LabelField name="Интервал" id="36">
+									<DataPath>Интервал</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Интервал</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Left</TitleLocation>
+									<Hiperlink>true</Hiperlink>
+									<ContextMenu name="ИнтервалКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ИнтервалРасширеннаяПодсказка" id="38"/>
+									<Events>
+										<Event name="Click">ИнтервалНажатие</Event>
+									</Events>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Дашборды</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Объект.ВсегоЗаработано</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="ГрафикКурсовВалют" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>График курсов валют</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+			<Settings xmlns:d4p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d4p1:Chart">
+				<d4p1:seriesCurId>135</d4p1:seriesCurId>
+				<d4p1:pointsCurId>2</d4p1:pointsCurId>
+				<d4p1:isSeriesDesign>true</d4p1:isSeriesDesign>
+				<d4p1:realSeriesCount>2</d4p1:realSeriesCount>
+				<d4p1:realSeriesData>
+					<d4p1:id>2</d4p1:id>
+					<d4p1:color>#BFBFBF</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>USD</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>true</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realSeriesData>
+				<d4p1:realSeriesData>
+					<d4p1:id>3</d4p1:id>
+					<d4p1:color>#DCDCDC</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rect</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>RUB</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>true</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realSeriesData>
+				<d4p1:realExSeriesData>
+					<d4p1:id>1</d4p1:id>
+					<d4p1:color>#991919</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Сводная</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realExSeriesData>
+				<d4p1:isPointsDesign>true</d4p1:isPointsDesign>
+				<d4p1:realPointCount>0</d4p1:realPointCount>
+				<d4p1:curSeries>1</d4p1:curSeries>
+				<d4p1:curPoint>0</d4p1:curPoint>
+				<d4p1:chartType>Line</d4p1:chartType>
+				<d4p1:circleLabelType>None</d4p1:circleLabelType>
+				<d4p1:labelsDelimiter>, </d4p1:labelsDelimiter>
+				<d4p1:labelsLocation>Edge</d4p1:labelsLocation>
+				<d4p1:lbFormat/>
+				<d4p1:lbpFormat/>
+				<d4p1:labelsColor>style:FormTextColor</d4p1:labelsColor>
+				<d4p1:labelsFont kind="AutoFont"/>
+				<d4p1:transparentLabelsBkg>true</d4p1:transparentLabelsBkg>
+				<d4p1:labelsBkgColor>auto</d4p1:labelsBkgColor>
+				<d4p1:labelsBorder width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:labelsBorder>
+				<d4p1:labelsBorderColor>auto</d4p1:labelsBorderColor>
+				<d4p1:circleExpandMode>None</d4p1:circleExpandMode>
+				<d4p1:chart3Dcrd>SouthWest</d4p1:chart3Dcrd>
+				<d4p1:title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Курсы валют</v8:content>
+					</v8:item>
+				</d4p1:title>
+				<d4p1:isShowTitle>true</d4p1:isShowTitle>
+				<d4p1:isShowLegend>false</d4p1:isShowLegend>
+				<d4p1:ttlBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:ttlBorder>
+				<d4p1:ttlBorderColor>style:BorderColor</d4p1:ttlBorderColor>
+				<d4p1:lgBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:lgBorder>
+				<d4p1:lgBorderColor>style:BorderColor</d4p1:lgBorderColor>
+				<d4p1:chBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:chBorder>
+				<d4p1:chBorderColor>style:BorderColor</d4p1:chBorderColor>
+				<d4p1:transparent>true</d4p1:transparent>
+				<d4p1:bkgColor>style:FieldBackColor</d4p1:bkgColor>
+				<d4p1:isTrnspTtl>false</d4p1:isTrnspTtl>
+				<d4p1:ttlColor>style:FieldBackColor</d4p1:ttlColor>
+				<d4p1:isTrnspLeg>false</d4p1:isTrnspLeg>
+				<d4p1:legColor>style:FieldBackColor</d4p1:legColor>
+				<d4p1:isTrnspCh>false</d4p1:isTrnspCh>
+				<d4p1:chColor>style:FieldBackColor</d4p1:chColor>
+				<d4p1:ttlTxtColor>#8C8C8C</d4p1:ttlTxtColor>
+				<d4p1:legTxtColor>style:FormTextColor</d4p1:legTxtColor>
+				<d4p1:chTxtColor>style:FormTextColor</d4p1:chTxtColor>
+				<d4p1:ttlFont ref="style:TextFont" height="22" kind="StyleItem"/>
+				<d4p1:legFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:chFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:isShowScale>true</d4p1:isShowScale>
+				<d4p1:isShowScaleVL>true</d4p1:isShowScaleVL>
+				<d4p1:isShowSeriesScale>true</d4p1:isShowSeriesScale>
+				<d4p1:isShowPointsScale>true</d4p1:isShowPointsScale>
+				<d4p1:isShowValuesScale>true</d4p1:isShowValuesScale>
+				<d4p1:vsFormat/>
+				<d4p1:xLabelsOrientation>Horizontal</d4p1:xLabelsOrientation>
+				<d4p1:scaleLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">None</v8ui:style>
+				</d4p1:scaleLine>
+				<d4p1:scaleColor>#A9A9A9</d4p1:scaleColor>
+				<d4p1:isAutoSeriesName>true</d4p1:isAutoSeriesName>
+				<d4p1:isAutoPointName>true</d4p1:isAutoPointName>
+				<d4p1:maxMode>NotDefined</d4p1:maxMode>
+				<d4p1:maxSeries>4</d4p1:maxSeries>
+				<d4p1:maxSeriesPrc>30</d4p1:maxSeriesPrc>
+				<d4p1:spaceMode>Half</d4p1:spaceMode>
+				<d4p1:baseVal>0</d4p1:baseVal>
+				<d4p1:isOutline>false</d4p1:isOutline>
+				<d4p1:realPiePoint>0</d4p1:realPiePoint>
+				<d4p1:realStockSeries>0</d4p1:realStockSeries>
+				<d4p1:isLight>true</d4p1:isLight>
+				<d4p1:isGradient>false</d4p1:isGradient>
+				<d4p1:isTransposition>false</d4p1:isTransposition>
+				<d4p1:hideBaseVal>false</d4p1:hideBaseVal>
+				<d4p1:dataTable>false</d4p1:dataTable>
+				<d4p1:dtVerLines>true</d4p1:dtVerLines>
+				<d4p1:dtHorLines>true</d4p1:dtHorLines>
+				<d4p1:dtHAlign>Right</d4p1:dtHAlign>
+				<d4p1:dtFormat/>
+				<d4p1:dtKeys>true</d4p1:dtKeys>
+				<d4p1:paletteKind>Palette32</d4p1:paletteKind>
+				<d4p1:animation>DontUse</d4p1:animation>
+				<d4p1:rebuildTime>16257139</d4p1:rebuildTime>
+				<d4p1:isTransposed>false</d4p1:isTransposed>
+				<d4p1:autoTransposition>false</d4p1:autoTransposition>
+				<d4p1:legendScrollEnable>false</d4p1:legendScrollEnable>
+				<d4p1:surfaceColor>#A90000</d4p1:surfaceColor>
+				<d4p1:radarScaleType>Circle</d4p1:radarScaleType>
+				<d4p1:gaugeValuesPresentation>Needle</d4p1:gaugeValuesPresentation>
+				<d4p1:gaugeQualityBands useTextStr="false" useTooltipStr="false"/>
+				<d4p1:beginGaugeAngle>0</d4p1:beginGaugeAngle>
+				<d4p1:endGaugeAngle>180</d4p1:endGaugeAngle>
+				<d4p1:gaugeThickness>5</d4p1:gaugeThickness>
+				<d4p1:gaugeLabelsLocation>InsideScale</d4p1:gaugeLabelsLocation>
+				<d4p1:gaugeLabelsArcDirection>false</d4p1:gaugeLabelsArcDirection>
+				<d4p1:gaugeBushThickness>4</d4p1:gaugeBushThickness>
+				<d4p1:gaugeBushColor>#A9A9A9</d4p1:gaugeBushColor>
+				<d4p1:autoMaxValue>true</d4p1:autoMaxValue>
+				<d4p1:userMaxValue>0</d4p1:userMaxValue>
+				<d4p1:autoMinValue>true</d4p1:autoMinValue>
+				<d4p1:userMinValue>0</d4p1:userMinValue>
+				<d4p1:elementsIsInit>true</d4p1:elementsIsInit>
+				<d4p1:titleIsInit>true</d4p1:titleIsInit>
+				<d4p1:legendIsInit>true</d4p1:legendIsInit>
+				<d4p1:chartIsInit>true</d4p1:chartIsInit>
+				<d4p1:elementsChart>
+					<d4p1:left>0</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsChart>
+				<d4p1:elementsLegend>
+					<d4p1:left>0.8328025477707001</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0.0405982905982906</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsLegend>
+				<d4p1:elementsTitle>
+					<d4p1:left>0</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsTitle>
+				<d4p1:borderColor>style:BorderColor</d4p1:borderColor>
+				<d4p1:border width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</d4p1:border>
+				<d4p1:dataSourceDescription/>
+				<d4p1:isDataSourceMode>false</d4p1:isDataSourceMode>
+				<d4p1:isRandomizedNewValues>true</d4p1:isRandomizedNewValues>
+				<d4p1:splineStrain>95</d4p1:splineStrain>
+				<d4p1:translucencePercent>0</d4p1:translucencePercent>
+				<d4p1:funnelNeckHeightPercent>10</d4p1:funnelNeckHeightPercent>
+				<d4p1:funnelNeckWidthPercent>10</d4p1:funnelNeckWidthPercent>
+				<d4p1:funnelGapSumPercent>3</d4p1:funnelGapSumPercent>
+				<d4p1:multiStageLinkLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+				</d4p1:multiStageLinkLine>
+				<d4p1:multiStageLinkColor>#000000</d4p1:multiStageLinkColor>
+			</Settings>
+		</Attribute>
+		<Attribute name="Интервал" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интервал</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ИнтервалПериода</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<Save>
+				<Field>Интервал</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПериодДанных" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсновнаяВалюта" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная валюта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаСейчас" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата сейчас</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДвижениеСредствРезультат" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Движение средств </v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГрафикКурсовТоваров" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>График курсов товаров</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+			<Settings xmlns:d4p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d4p1:Chart">
+				<d4p1:seriesCurId>127</d4p1:seriesCurId>
+				<d4p1:pointsCurId>0</d4p1:pointsCurId>
+				<d4p1:isSeriesDesign>true</d4p1:isSeriesDesign>
+				<d4p1:realSeriesCount>2</d4p1:realSeriesCount>
+				<d4p1:realSeriesData>
+					<d4p1:id>2</d4p1:id>
+					<d4p1:color>#BFBFBF</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Серия 1</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realSeriesData>
+				<d4p1:realSeriesData>
+					<d4p1:id>3</d4p1:id>
+					<d4p1:color>#DCDCDC</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rect</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Серия 2</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realSeriesData>
+				<d4p1:realExSeriesData>
+					<d4p1:id>1</d4p1:id>
+					<d4p1:color>#991919</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Сводная</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realExSeriesData>
+				<d4p1:isPointsDesign>true</d4p1:isPointsDesign>
+				<d4p1:realPointCount>0</d4p1:realPointCount>
+				<d4p1:curSeries>1</d4p1:curSeries>
+				<d4p1:curPoint>0</d4p1:curPoint>
+				<d4p1:chartType>Line</d4p1:chartType>
+				<d4p1:circleLabelType>None</d4p1:circleLabelType>
+				<d4p1:labelsDelimiter>, </d4p1:labelsDelimiter>
+				<d4p1:labelsLocation>Edge</d4p1:labelsLocation>
+				<d4p1:lbFormat/>
+				<d4p1:lbpFormat/>
+				<d4p1:labelsColor>style:FormTextColor</d4p1:labelsColor>
+				<d4p1:labelsFont kind="AutoFont"/>
+				<d4p1:transparentLabelsBkg>true</d4p1:transparentLabelsBkg>
+				<d4p1:labelsBkgColor>auto</d4p1:labelsBkgColor>
+				<d4p1:labelsBorder width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</d4p1:labelsBorder>
+				<d4p1:labelsBorderColor>auto</d4p1:labelsBorderColor>
+				<d4p1:circleExpandMode>None</d4p1:circleExpandMode>
+				<d4p1:chart3Dcrd>SouthWest</d4p1:chart3Dcrd>
+				<d4p1:title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Курсы нефти</v8:content>
+					</v8:item>
+				</d4p1:title>
+				<d4p1:isShowTitle>true</d4p1:isShowTitle>
+				<d4p1:isShowLegend>false</d4p1:isShowLegend>
+				<d4p1:ttlBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:ttlBorder>
+				<d4p1:ttlBorderColor>style:BorderColor</d4p1:ttlBorderColor>
+				<d4p1:lgBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:lgBorder>
+				<d4p1:lgBorderColor>style:BorderColor</d4p1:lgBorderColor>
+				<d4p1:chBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:chBorder>
+				<d4p1:chBorderColor>style:BorderColor</d4p1:chBorderColor>
+				<d4p1:transparent>false</d4p1:transparent>
+				<d4p1:bkgColor>style:FieldBackColor</d4p1:bkgColor>
+				<d4p1:isTrnspTtl>false</d4p1:isTrnspTtl>
+				<d4p1:ttlColor>style:FieldBackColor</d4p1:ttlColor>
+				<d4p1:isTrnspLeg>false</d4p1:isTrnspLeg>
+				<d4p1:legColor>style:FieldBackColor</d4p1:legColor>
+				<d4p1:isTrnspCh>false</d4p1:isTrnspCh>
+				<d4p1:chColor>style:FieldBackColor</d4p1:chColor>
+				<d4p1:ttlTxtColor>#8C8C8C</d4p1:ttlTxtColor>
+				<d4p1:legTxtColor>style:FormTextColor</d4p1:legTxtColor>
+				<d4p1:chTxtColor>style:FormTextColor</d4p1:chTxtColor>
+				<d4p1:ttlFont ref="style:TextFont" height="22" kind="StyleItem"/>
+				<d4p1:legFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:chFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:isShowScale>true</d4p1:isShowScale>
+				<d4p1:isShowScaleVL>true</d4p1:isShowScaleVL>
+				<d4p1:isShowSeriesScale>true</d4p1:isShowSeriesScale>
+				<d4p1:isShowPointsScale>true</d4p1:isShowPointsScale>
+				<d4p1:isShowValuesScale>true</d4p1:isShowValuesScale>
+				<d4p1:vsFormat/>
+				<d4p1:xLabelsOrientation>Auto</d4p1:xLabelsOrientation>
+				<d4p1:scaleLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">None</v8ui:style>
+				</d4p1:scaleLine>
+				<d4p1:scaleColor>#A9A9A9</d4p1:scaleColor>
+				<d4p1:isAutoSeriesName>true</d4p1:isAutoSeriesName>
+				<d4p1:isAutoPointName>true</d4p1:isAutoPointName>
+				<d4p1:maxMode>NotDefined</d4p1:maxMode>
+				<d4p1:maxSeries>4</d4p1:maxSeries>
+				<d4p1:maxSeriesPrc>30</d4p1:maxSeriesPrc>
+				<d4p1:spaceMode>Half</d4p1:spaceMode>
+				<d4p1:baseVal>0</d4p1:baseVal>
+				<d4p1:isOutline>false</d4p1:isOutline>
+				<d4p1:realPiePoint>0</d4p1:realPiePoint>
+				<d4p1:realStockSeries>0</d4p1:realStockSeries>
+				<d4p1:isLight>true</d4p1:isLight>
+				<d4p1:isGradient>false</d4p1:isGradient>
+				<d4p1:isTransposition>false</d4p1:isTransposition>
+				<d4p1:hideBaseVal>false</d4p1:hideBaseVal>
+				<d4p1:dataTable>false</d4p1:dataTable>
+				<d4p1:dtVerLines>true</d4p1:dtVerLines>
+				<d4p1:dtHorLines>true</d4p1:dtHorLines>
+				<d4p1:dtHAlign>Right</d4p1:dtHAlign>
+				<d4p1:dtFormat/>
+				<d4p1:dtKeys>true</d4p1:dtKeys>
+				<d4p1:paletteKind>Palette32</d4p1:paletteKind>
+				<d4p1:animation>Auto</d4p1:animation>
+				<d4p1:rebuildTime>16281187</d4p1:rebuildTime>
+				<d4p1:isTransposed>false</d4p1:isTransposed>
+				<d4p1:autoTransposition>false</d4p1:autoTransposition>
+				<d4p1:legendScrollEnable>false</d4p1:legendScrollEnable>
+				<d4p1:surfaceColor>#A90000</d4p1:surfaceColor>
+				<d4p1:radarScaleType>Circle</d4p1:radarScaleType>
+				<d4p1:gaugeValuesPresentation>Needle</d4p1:gaugeValuesPresentation>
+				<d4p1:gaugeQualityBands useTextStr="false" useTooltipStr="false"/>
+				<d4p1:beginGaugeAngle>0</d4p1:beginGaugeAngle>
+				<d4p1:endGaugeAngle>180</d4p1:endGaugeAngle>
+				<d4p1:gaugeThickness>5</d4p1:gaugeThickness>
+				<d4p1:gaugeLabelsLocation>InsideScale</d4p1:gaugeLabelsLocation>
+				<d4p1:gaugeLabelsArcDirection>false</d4p1:gaugeLabelsArcDirection>
+				<d4p1:gaugeBushThickness>4</d4p1:gaugeBushThickness>
+				<d4p1:gaugeBushColor>#A9A9A9</d4p1:gaugeBushColor>
+				<d4p1:autoMaxValue>true</d4p1:autoMaxValue>
+				<d4p1:userMaxValue>0</d4p1:userMaxValue>
+				<d4p1:autoMinValue>true</d4p1:autoMinValue>
+				<d4p1:userMinValue>0</d4p1:userMinValue>
+				<d4p1:elementsIsInit>true</d4p1:elementsIsInit>
+				<d4p1:titleIsInit>true</d4p1:titleIsInit>
+				<d4p1:legendIsInit>true</d4p1:legendIsInit>
+				<d4p1:chartIsInit>true</d4p1:chartIsInit>
+				<d4p1:elementsChart>
+					<d4p1:left>0.006389776357827471</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsChart>
+				<d4p1:elementsLegend>
+					<d4p1:left>0.8328025477707001</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0.0405982905982906</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsLegend>
+				<d4p1:elementsTitle>
+					<d4p1:left>0</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsTitle>
+				<d4p1:borderColor>style:BorderColor</d4p1:borderColor>
+				<d4p1:border width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</d4p1:border>
+				<d4p1:dataSourceDescription/>
+				<d4p1:isDataSourceMode>false</d4p1:isDataSourceMode>
+				<d4p1:isRandomizedNewValues>true</d4p1:isRandomizedNewValues>
+				<d4p1:splineStrain>95</d4p1:splineStrain>
+				<d4p1:translucencePercent>0</d4p1:translucencePercent>
+				<d4p1:funnelNeckHeightPercent>10</d4p1:funnelNeckHeightPercent>
+				<d4p1:funnelNeckWidthPercent>10</d4p1:funnelNeckWidthPercent>
+				<d4p1:funnelGapSumPercent>3</d4p1:funnelGapSumPercent>
+				<d4p1:multiStageLinkLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+				</d4p1:multiStageLinkLine>
+				<d4p1:multiStageLinkColor>#000000</d4p1:multiStageLinkColor>
+			</Settings>
+		</Attribute>
+		<Attribute name="СтоимостьКапиталаДиаграмма" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость капитала диаграмма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+			<Settings xmlns:d4p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d4p1:Chart">
+				<d4p1:seriesCurId>128</d4p1:seriesCurId>
+				<d4p1:pointsCurId>200</d4p1:pointsCurId>
+				<d4p1:isSeriesDesign>true</d4p1:isSeriesDesign>
+				<d4p1:realSeriesCount>2</d4p1:realSeriesCount>
+				<d4p1:realSeriesData>
+					<d4p1:id>3</d4p1:id>
+					<d4p1:color>style:ПользовательВыбранный</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рубли</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>true</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realSeriesData>
+				<d4p1:realSeriesData>
+					<d4p1:id>4</d4p1:id>
+					<d4p1:color>#BFBFBF</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rect</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>USD</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>true</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realSeriesData>
+				<d4p1:realExSeriesData>
+					<d4p1:id>1</d4p1:id>
+					<d4p1:color>#991919</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Сводная</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realExSeriesData>
+				<d4p1:isPointsDesign>true</d4p1:isPointsDesign>
+				<d4p1:realPointCount>3</d4p1:realPointCount>
+				<d4p1:realPointData>
+					<d4p1:id>1</d4p1:id>
+					<d4p1:color>#D02A35</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 1</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>2</d4p1:id>
+					<d4p1:color>#FEE101</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rect</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 2</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>14</d4p1:id>
+					<d4p1:color>#19CC19</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Circle</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 3</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:curSeries>1</d4p1:curSeries>
+				<d4p1:curPoint>2</d4p1:curPoint>
+				<d4p1:chartType>StackedArea</d4p1:chartType>
+				<d4p1:circleLabelType>None</d4p1:circleLabelType>
+				<d4p1:labelsDelimiter>, </d4p1:labelsDelimiter>
+				<d4p1:labelsLocation>Edge</d4p1:labelsLocation>
+				<d4p1:lbFormat/>
+				<d4p1:lbpFormat/>
+				<d4p1:labelsColor>style:FormTextColor</d4p1:labelsColor>
+				<d4p1:labelsFont kind="AutoFont"/>
+				<d4p1:transparentLabelsBkg>true</d4p1:transparentLabelsBkg>
+				<d4p1:labelsBkgColor>auto</d4p1:labelsBkgColor>
+				<d4p1:labelsBorder width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</d4p1:labelsBorder>
+				<d4p1:labelsBorderColor>auto</d4p1:labelsBorderColor>
+				<d4p1:circleExpandMode>None</d4p1:circleExpandMode>
+				<d4p1:chart3Dcrd>SouthWest</d4p1:chart3Dcrd>
+				<d4p1:title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Стоимость капитала</v8:content>
+					</v8:item>
+				</d4p1:title>
+				<d4p1:isShowTitle>true</d4p1:isShowTitle>
+				<d4p1:isShowLegend>false</d4p1:isShowLegend>
+				<d4p1:ttlBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:ttlBorder>
+				<d4p1:ttlBorderColor>style:BorderColor</d4p1:ttlBorderColor>
+				<d4p1:lgBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:lgBorder>
+				<d4p1:lgBorderColor>style:BorderColor</d4p1:lgBorderColor>
+				<d4p1:chBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:chBorder>
+				<d4p1:chBorderColor>style:BorderColor</d4p1:chBorderColor>
+				<d4p1:transparent>false</d4p1:transparent>
+				<d4p1:bkgColor>style:FieldBackColor</d4p1:bkgColor>
+				<d4p1:isTrnspTtl>false</d4p1:isTrnspTtl>
+				<d4p1:ttlColor>style:FieldBackColor</d4p1:ttlColor>
+				<d4p1:isTrnspLeg>false</d4p1:isTrnspLeg>
+				<d4p1:legColor>style:FieldBackColor</d4p1:legColor>
+				<d4p1:isTrnspCh>false</d4p1:isTrnspCh>
+				<d4p1:chColor>style:FieldBackColor</d4p1:chColor>
+				<d4p1:ttlTxtColor>#8C8C8C</d4p1:ttlTxtColor>
+				<d4p1:legTxtColor>style:FormTextColor</d4p1:legTxtColor>
+				<d4p1:chTxtColor>style:FormTextColor</d4p1:chTxtColor>
+				<d4p1:ttlFont ref="style:TextFont" height="22" kind="StyleItem"/>
+				<d4p1:legFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:chFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:isShowScale>true</d4p1:isShowScale>
+				<d4p1:isShowScaleVL>true</d4p1:isShowScaleVL>
+				<d4p1:isShowSeriesScale>true</d4p1:isShowSeriesScale>
+				<d4p1:isShowPointsScale>true</d4p1:isShowPointsScale>
+				<d4p1:isShowValuesScale>true</d4p1:isShowValuesScale>
+				<d4p1:vsFormat>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ДФ=dd/MM/yy</v8:content>
+					</v8:item>
+				</d4p1:vsFormat>
+				<d4p1:xLabelsOrientation>Auto</d4p1:xLabelsOrientation>
+				<d4p1:scaleLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">None</v8ui:style>
+				</d4p1:scaleLine>
+				<d4p1:scaleColor>style:ToolTipTextColor</d4p1:scaleColor>
+				<d4p1:isAutoSeriesName>true</d4p1:isAutoSeriesName>
+				<d4p1:isAutoPointName>true</d4p1:isAutoPointName>
+				<d4p1:maxMode>NotDefined</d4p1:maxMode>
+				<d4p1:maxSeries>4</d4p1:maxSeries>
+				<d4p1:maxSeriesPrc>30</d4p1:maxSeriesPrc>
+				<d4p1:spaceMode>Half</d4p1:spaceMode>
+				<d4p1:baseVal>0</d4p1:baseVal>
+				<d4p1:isOutline>false</d4p1:isOutline>
+				<d4p1:realPiePoint>0</d4p1:realPiePoint>
+				<d4p1:realStockSeries>0</d4p1:realStockSeries>
+				<d4p1:isLight>true</d4p1:isLight>
+				<d4p1:isGradient>false</d4p1:isGradient>
+				<d4p1:isTransposition>false</d4p1:isTransposition>
+				<d4p1:hideBaseVal>false</d4p1:hideBaseVal>
+				<d4p1:dataTable>false</d4p1:dataTable>
+				<d4p1:dtVerLines>true</d4p1:dtVerLines>
+				<d4p1:dtHorLines>true</d4p1:dtHorLines>
+				<d4p1:dtHAlign>Right</d4p1:dtHAlign>
+				<d4p1:dtFormat/>
+				<d4p1:dtKeys>true</d4p1:dtKeys>
+				<d4p1:paletteKind>Palette32</d4p1:paletteKind>
+				<d4p1:animation>DontUse</d4p1:animation>
+				<d4p1:rebuildTime>18081109</d4p1:rebuildTime>
+				<d4p1:isTransposed>false</d4p1:isTransposed>
+				<d4p1:autoTransposition>false</d4p1:autoTransposition>
+				<d4p1:legendScrollEnable>false</d4p1:legendScrollEnable>
+				<d4p1:surfaceColor>#A90000</d4p1:surfaceColor>
+				<d4p1:radarScaleType>Circle</d4p1:radarScaleType>
+				<d4p1:gaugeValuesPresentation>Needle</d4p1:gaugeValuesPresentation>
+				<d4p1:gaugeQualityBands useTextStr="false" useTooltipStr="false"/>
+				<d4p1:beginGaugeAngle>0</d4p1:beginGaugeAngle>
+				<d4p1:endGaugeAngle>180</d4p1:endGaugeAngle>
+				<d4p1:gaugeThickness>5</d4p1:gaugeThickness>
+				<d4p1:gaugeLabelsLocation>InsideScale</d4p1:gaugeLabelsLocation>
+				<d4p1:gaugeLabelsArcDirection>false</d4p1:gaugeLabelsArcDirection>
+				<d4p1:gaugeBushThickness>4</d4p1:gaugeBushThickness>
+				<d4p1:gaugeBushColor>#A9A9A9</d4p1:gaugeBushColor>
+				<d4p1:autoMaxValue>true</d4p1:autoMaxValue>
+				<d4p1:userMaxValue>0</d4p1:userMaxValue>
+				<d4p1:autoMinValue>true</d4p1:autoMinValue>
+				<d4p1:userMinValue>0</d4p1:userMinValue>
+				<d4p1:elementsIsInit>true</d4p1:elementsIsInit>
+				<d4p1:titleIsInit>true</d4p1:titleIsInit>
+				<d4p1:legendIsInit>true</d4p1:legendIsInit>
+				<d4p1:chartIsInit>true</d4p1:chartIsInit>
+				<d4p1:elementsChart>
+					<d4p1:left>0</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsChart>
+				<d4p1:elementsLegend>
+					<d4p1:left>0.8290734824281151</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0.4248927038626609</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsLegend>
+				<d4p1:elementsTitle>
+					<d4p1:left>0</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsTitle>
+				<d4p1:borderColor>style:BorderColor</d4p1:borderColor>
+				<d4p1:border width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</d4p1:border>
+				<d4p1:dataSourceDescription/>
+				<d4p1:isDataSourceMode>false</d4p1:isDataSourceMode>
+				<d4p1:isRandomizedNewValues>true</d4p1:isRandomizedNewValues>
+				<d4p1:realDataItems>
+					<d4p1:item>
+						<d4p1:valData xsi:type="xs:decimal">11.29</d4p1:valData>
+						<d4p1:valInfo xsi:nil="true"/>
+						<d4p1:toolTip/>
+					</d4p1:item>
+					<d4p1:item>
+						<d4p1:valData xsi:type="xs:decimal">1.43</d4p1:valData>
+						<d4p1:valInfo xsi:nil="true"/>
+						<d4p1:toolTip/>
+					</d4p1:item>
+					<d4p1:item>
+						<d4p1:valData xsi:type="xs:decimal">4.02</d4p1:valData>
+						<d4p1:valInfo xsi:nil="true"/>
+						<d4p1:toolTip/>
+					</d4p1:item>
+					<d4p1:item>
+						<d4p1:valData xsi:type="xs:decimal">10.82</d4p1:valData>
+						<d4p1:valInfo xsi:nil="true"/>
+						<d4p1:toolTip/>
+					</d4p1:item>
+					<d4p1:item>
+						<d4p1:valData xsi:type="xs:decimal">10.64</d4p1:valData>
+						<d4p1:valInfo xsi:nil="true"/>
+						<d4p1:toolTip/>
+					</d4p1:item>
+					<d4p1:item>
+						<d4p1:valData xsi:type="xs:decimal">13.8</d4p1:valData>
+						<d4p1:valInfo xsi:nil="true"/>
+						<d4p1:toolTip/>
+					</d4p1:item>
+				</d4p1:realDataItems>
+				<d4p1:splineStrain>95</d4p1:splineStrain>
+				<d4p1:translucencePercent>0</d4p1:translucencePercent>
+				<d4p1:funnelNeckHeightPercent>10</d4p1:funnelNeckHeightPercent>
+				<d4p1:funnelNeckWidthPercent>10</d4p1:funnelNeckWidthPercent>
+				<d4p1:funnelGapSumPercent>3</d4p1:funnelGapSumPercent>
+				<d4p1:multiStageLinkLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+				</d4p1:multiStageLinkLine>
+				<d4p1:multiStageLinkColor>#000000</d4p1:multiStageLinkColor>
+			</Settings>
+		</Attribute>
+		<Attribute name="АктивныеДашборды" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активные дашборды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресРезультата" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДинамикаКапиталаРезультат" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Динамика капитала результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыОбработчикаОжиданияАктуализации" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры обработчика ожидания актуализации</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="КурсыОбновляютсяАвтоматически" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Курсы обновляются автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БазаОбновляется" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>База обновляется</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокДокументовДоход" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов доход</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Дата" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Валюта" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ВводСредств</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СостояниеДокумента" id="5">
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПлатежнаяСистема" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платежная система</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПлатежныеСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИсточникСредств" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Источник средств</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ВидыИсточниковСредств</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаления" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ОсновнойИсточникСредств" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной источник средств</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыИсточниковСредств</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсновнаяПлатежнаяСистема" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная платежная система</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПлатежныеСистемы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокДокументовРасход" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов расход</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Дата" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СостояниеДокумента" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ВыводСредств</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Валюта" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИнвестированыВПроект" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Инвестированы в проект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сумма" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОбъектИнвестиций" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект инвестиций</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ОбъектыИнвестиций</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПлатежнаяСистема" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платежная система</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПлатежныеСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаления" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="СписокДокументовПеревод" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов перевод</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Дата" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="СостояниеДокумента" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ПереводМеждуЭПС</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВалютаИсточник" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаИсточник" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВалютаПриемник" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта приемник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СуммаПриемник" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сумма приемник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПлатежнаяСистемаИсточник" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платежная система источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПлатежныеСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПлатежнаяСистемаПриемник" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платежная система приемник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПлатежныеСистемы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПометкаУдаления" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокДокументовДоход</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокДокументовДоход.ПометкаУдаления</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьДанные" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить данные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Refresh</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОбновитьДанные</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="НастройкаПанелей" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка панелей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаПанелей</Action>
+		</Command>
+		<Command name="ЭкспортБД" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспорт в БД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспорт БД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЭкспортБД</Action>
+		</Command>
+		<Command name="ВыгрузкаЗагрузкаКотировок" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обмен котировками (через файл)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузка загрузка котировок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузкаЗагрузкаКотировок</Action>
+		</Command>
+		<Command name="ОбновитьКурсы" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить курсы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить курсы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьКурсы</Action>
+		</Command>
+		<Command name="УдалитьДокументСписка" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить </v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить документ списка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьДокументСписка</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПеревестиВЧерновик" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевести в черновик</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перевести в черновик</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.Ожидается</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПеревестиВЧерновик</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ДобавитьДокументСписка" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить документ списка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ДобавитьДокументСписка</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

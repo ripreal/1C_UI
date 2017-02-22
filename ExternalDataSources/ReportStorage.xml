@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<ExternalDataSource uuid="730f4c80-1398-4935-a755-b4289ab6e45e">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceManager.ReportStorage" category="Manager">
+				<xr:TypeId>064faf43-a5f3-4946-bd3c-fae1ec59d6d9</xr:TypeId>
+				<xr:ValueId>89502df5-26ee-447c-bfaa-a168c34fea3d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTablesManager.ReportStorage" category="TablesManager">
+				<xr:TypeId>08fec7dd-5a71-42e9-8d2a-47ba16ef9da8</xr:TypeId>
+				<xr:ValueId>5e66762b-e313-44a8-b086-2d9e31df5207</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceCubesManager.ReportStorage" category="CubesManager">
+				<xr:TypeId>11b74107-8ab7-4e9e-95e1-78d6a8215592</xr:TypeId>
+				<xr:ValueId>b91fdbd2-ab9f-4797-9753-54efde55846f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ReportStorage</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Report storage</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+		</Properties>
+		<ChildObjects/>
+	</ExternalDataSource>
+</MetaDataObject>

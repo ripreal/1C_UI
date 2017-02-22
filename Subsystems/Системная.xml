@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<Subsystem uuid="944b766e-4095-4a7c-a451-a3055b561ca0">
+		<Properties>
+			<Name>Системная</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Системная</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">09be907e-5c0c-4104-9a6f-84c388e8854c</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ДоступныеСредства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">141b65e1-5dba-4615-b685-f0d34ec30807</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КурсыВалют</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">507cad1d-cc9f-490d-8080-537ef807dffe</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">8c4eef61-59b8-4b30-9a03-accaa0ecd5f2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОперацийНаСчете</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыКорректировокСчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыИсточниковСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаНачалаЗагрузкиКурсов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДополнительнаяВалюта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ОсновнаяВалюта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПервыйЗапускВыполнен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСВалютамиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">a9fb5a20-7746-46c1-80c2-ca3d1a37b851</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ОсновнаяВалюта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ДополнительнаяВалюта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonAttribute.Комментарий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкиВалют</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WSReference.CBR_DailyInfoWebServ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">e50d328b-d88f-4788-81f8-9b21df40d5b5</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НачальнаяСтраница</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

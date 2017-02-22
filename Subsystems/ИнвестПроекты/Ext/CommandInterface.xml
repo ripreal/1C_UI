@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<CommandsVisibility>
+		<Command name="1:661f1963-2041-48bc-a5f5-64ff06fc8b76">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="1:844df47b-6449-4695-b24f-74c422a31821">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="1:93556d5a-2d22-41c1-84f5-3ce6c3a3b3ce">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="1:c91319f1-72c7-4543-8cde-80acf5442da7">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="1:c0568e93-873c-4c20-a8a3-fcbeda95d627">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsOrder>
+		<Command name="0:f2e0a7c9-ce14-491f-91b9-adc8d1df3381">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:661f1963-2041-48bc-a5f5-64ff06fc8b76">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:844df47b-6449-4695-b24f-74c422a31821">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:93556d5a-2d22-41c1-84f5-3ce6c3a3b3ce">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:c91319f1-72c7-4543-8cde-80acf5442da7">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:c0568e93-873c-4c20-a8a3-fcbeda95d627">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="1:f2e0a7c9-ce14-491f-91b9-adc8d1df3381">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:661f1963-2041-48bc-a5f5-64ff06fc8b76">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:844df47b-6449-4695-b24f-74c422a31821">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:93556d5a-2d22-41c1-84f5-3ce6c3a3b3ce">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:c91319f1-72c7-4543-8cde-80acf5442da7">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="1:c0568e93-873c-4c20-a8a3-fcbeda95d627">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>ActionsPanelCreate</Group>
+	</GroupsOrder>
+</CommandInterface>

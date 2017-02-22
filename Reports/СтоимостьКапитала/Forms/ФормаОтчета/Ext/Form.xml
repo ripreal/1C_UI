@@ -1,0 +1,877 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<VerticalScroll>use</VerticalScroll>
+	<ReportResult/>
+	<DetailsData/>
+	<ReportFormType>Main</ReportFormType>
+	<VariantAppearance/>
+	<AutoShowState>Auto</AutoShowState>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаСформировать" id="7">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СформироватьОтчет</CommandName>
+				<ExtendedTooltip name="ФормаСформироватьРасширеннаяПодсказка" id="8"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="НастройкиОтчета" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки отчета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки отчета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="НастройкиОтчетаРасширеннаяПодсказка" id="22"/>
+			<ChildItems>
+				<InputField name="НачалоПериода" id="15">
+					<DataPath>НачалоПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период с</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="OnChange">НачалоПериодаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КонецПериода" id="12">
+					<DataPath>КонецПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КонецПериодаКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="КонецПериодаРасширеннаяПодсказка" id="14"/>
+					<Events>
+						<Event name="OnChange">КонецПериодаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<CheckBoxField name="ОтборПоВалюте" id="28">
+					<DataPath>ОтборПоВалюте</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОтборПоВалютеКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ОтборПоВалютеРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">ОтборПоВалютеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="Валюта" id="25">
+					<DataPath>Валюта</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ВалютаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ВалютаРасширеннаяПодсказка" id="27"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="23">
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="24"/>
+			<ChildItems>
+				<ChartField name="Результат" id="1">
+					<DataPath>Результат</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стоимость капитала с пересчетом в основную валюту</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>#6B6B6B</TitleTextColor>
+					<TitleFont ref="style:NormalTextFont" height="14" kind="StyleItem"/>
+					<TitleLocation>Top</TitleLocation>
+					<Width>90</Width>
+					<VerticalStretch>false</VerticalStretch>
+					<ContextMenu name="РезультатКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="3"/>
+				</ChartField>
+				<ChartField name="РезультатКурсы" id="31">
+					<DataPath>РезультатКурсы</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Динамика курсов валюты</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>#6B6B6B</TitleTextColor>
+					<TitleFont ref="style:NormalTextFont" height="14" kind="StyleItem"/>
+					<TitleLocation>Top</TitleLocation>
+					<ContextMenu name="РезультатКурсыКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="РезультатКурсыРасширеннаяПодсказка" id="33"/>
+				</ChartField>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="РезультатТаблица" id="9">
+			<DataPath>РезультатТаблица</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стоимость капитала в виде таблицы</v8:content>
+				</v8:item>
+			</Title>
+			<TitleTextColor>#686868</TitleTextColor>
+			<TitleFont ref="style:NormalTextFont" height="14" kind="StyleItem"/>
+			<TitleLocation>Top</TitleLocation>
+			<HorizontalScrollBar>false</HorizontalScrollBar>
+			<ContextMenu name="РезультатТаблицаКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="РезультатТаблицаРасширеннаяПодсказка" id="11"/>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.СтоимостьКапитала</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Результат" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+			<Settings xmlns:d4p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d4p1:Chart">
+				<d4p1:seriesCurId>1</d4p1:seriesCurId>
+				<d4p1:pointsCurId>46</d4p1:pointsCurId>
+				<d4p1:isSeriesDesign>true</d4p1:isSeriesDesign>
+				<d4p1:realSeriesCount>0</d4p1:realSeriesCount>
+				<d4p1:realExSeriesData>
+					<d4p1:id>1</d4p1:id>
+					<d4p1:color>#991919</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Сводная</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realExSeriesData>
+				<d4p1:isPointsDesign>true</d4p1:isPointsDesign>
+				<d4p1:realPointCount>4</d4p1:realPointCount>
+				<d4p1:realPointData>
+					<d4p1:id>1</d4p1:id>
+					<d4p1:color>#D02A35</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>шшш</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>true</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>2</d4p1:id>
+					<d4p1:color>#FEE101</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rect</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 2</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>9</d4p1:id>
+					<d4p1:color>#19CC19</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Circle</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 3</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>10</d4p1:id>
+					<d4p1:color>#19B2E5</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 4</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:curSeries>-1</d4p1:curSeries>
+				<d4p1:curPoint>0</d4p1:curPoint>
+				<d4p1:chartType>StackedArea</d4p1:chartType>
+				<d4p1:circleLabelType>None</d4p1:circleLabelType>
+				<d4p1:labelsDelimiter>, </d4p1:labelsDelimiter>
+				<d4p1:labelsLocation>Edge</d4p1:labelsLocation>
+				<d4p1:lbFormat/>
+				<d4p1:lbpFormat/>
+				<d4p1:labelsColor>style:FormTextColor</d4p1:labelsColor>
+				<d4p1:labelsFont kind="AutoFont"/>
+				<d4p1:transparentLabelsBkg>true</d4p1:transparentLabelsBkg>
+				<d4p1:labelsBkgColor>auto</d4p1:labelsBkgColor>
+				<d4p1:labelsBorder width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</d4p1:labelsBorder>
+				<d4p1:labelsBorderColor>auto</d4p1:labelsBorderColor>
+				<d4p1:circleExpandMode>None</d4p1:circleExpandMode>
+				<d4p1:chart3Dcrd>SouthWest</d4p1:chart3Dcrd>
+				<d4p1:title/>
+				<d4p1:isShowTitle>true</d4p1:isShowTitle>
+				<d4p1:isShowLegend>true</d4p1:isShowLegend>
+				<d4p1:ttlBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:ttlBorder>
+				<d4p1:ttlBorderColor>style:BorderColor</d4p1:ttlBorderColor>
+				<d4p1:lgBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:lgBorder>
+				<d4p1:lgBorderColor>style:BorderColor</d4p1:lgBorderColor>
+				<d4p1:chBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:chBorder>
+				<d4p1:chBorderColor>style:BorderColor</d4p1:chBorderColor>
+				<d4p1:transparent>true</d4p1:transparent>
+				<d4p1:bkgColor>style:FieldBackColor</d4p1:bkgColor>
+				<d4p1:isTrnspTtl>false</d4p1:isTrnspTtl>
+				<d4p1:ttlColor>style:FieldBackColor</d4p1:ttlColor>
+				<d4p1:isTrnspLeg>false</d4p1:isTrnspLeg>
+				<d4p1:legColor>style:FieldBackColor</d4p1:legColor>
+				<d4p1:isTrnspCh>false</d4p1:isTrnspCh>
+				<d4p1:chColor>style:FieldBackColor</d4p1:chColor>
+				<d4p1:ttlTxtColor>style:FormTextColor</d4p1:ttlTxtColor>
+				<d4p1:legTxtColor>style:FormTextColor</d4p1:legTxtColor>
+				<d4p1:chTxtColor>style:FormTextColor</d4p1:chTxtColor>
+				<d4p1:ttlFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:legFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:chFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:isShowScale>true</d4p1:isShowScale>
+				<d4p1:isShowScaleVL>true</d4p1:isShowScaleVL>
+				<d4p1:isShowSeriesScale>true</d4p1:isShowSeriesScale>
+				<d4p1:isShowPointsScale>true</d4p1:isShowPointsScale>
+				<d4p1:isShowValuesScale>true</d4p1:isShowValuesScale>
+				<d4p1:vsFormat/>
+				<d4p1:xLabelsOrientation>Auto</d4p1:xLabelsOrientation>
+				<d4p1:scaleLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">Dotted</v8ui:style>
+				</d4p1:scaleLine>
+				<d4p1:scaleColor>#A9A9A9</d4p1:scaleColor>
+				<d4p1:isAutoSeriesName>true</d4p1:isAutoSeriesName>
+				<d4p1:isAutoPointName>true</d4p1:isAutoPointName>
+				<d4p1:maxMode>NotDefined</d4p1:maxMode>
+				<d4p1:maxSeries>4</d4p1:maxSeries>
+				<d4p1:maxSeriesPrc>30</d4p1:maxSeriesPrc>
+				<d4p1:spaceMode>Half</d4p1:spaceMode>
+				<d4p1:baseVal>0</d4p1:baseVal>
+				<d4p1:isOutline>false</d4p1:isOutline>
+				<d4p1:realPiePoint>0</d4p1:realPiePoint>
+				<d4p1:realStockSeries>0</d4p1:realStockSeries>
+				<d4p1:isLight>true</d4p1:isLight>
+				<d4p1:isGradient>false</d4p1:isGradient>
+				<d4p1:isTransposition>false</d4p1:isTransposition>
+				<d4p1:hideBaseVal>false</d4p1:hideBaseVal>
+				<d4p1:dataTable>false</d4p1:dataTable>
+				<d4p1:dtVerLines>true</d4p1:dtVerLines>
+				<d4p1:dtHorLines>true</d4p1:dtHorLines>
+				<d4p1:dtHAlign>Right</d4p1:dtHAlign>
+				<d4p1:dtFormat/>
+				<d4p1:dtKeys>true</d4p1:dtKeys>
+				<d4p1:paletteKind>Palette32</d4p1:paletteKind>
+				<d4p1:animation>Auto</d4p1:animation>
+				<d4p1:rebuildTime>32106756</d4p1:rebuildTime>
+				<d4p1:isTransposed>false</d4p1:isTransposed>
+				<d4p1:autoTransposition>false</d4p1:autoTransposition>
+				<d4p1:legendScrollEnable>false</d4p1:legendScrollEnable>
+				<d4p1:surfaceColor>#A90000</d4p1:surfaceColor>
+				<d4p1:radarScaleType>Circle</d4p1:radarScaleType>
+				<d4p1:gaugeValuesPresentation>Needle</d4p1:gaugeValuesPresentation>
+				<d4p1:gaugeQualityBands useTextStr="false" useTooltipStr="false"/>
+				<d4p1:beginGaugeAngle>0</d4p1:beginGaugeAngle>
+				<d4p1:endGaugeAngle>180</d4p1:endGaugeAngle>
+				<d4p1:gaugeThickness>5</d4p1:gaugeThickness>
+				<d4p1:gaugeLabelsLocation>InsideScale</d4p1:gaugeLabelsLocation>
+				<d4p1:gaugeLabelsArcDirection>false</d4p1:gaugeLabelsArcDirection>
+				<d4p1:gaugeBushThickness>4</d4p1:gaugeBushThickness>
+				<d4p1:gaugeBushColor>#A9A9A9</d4p1:gaugeBushColor>
+				<d4p1:autoMaxValue>false</d4p1:autoMaxValue>
+				<d4p1:userMaxValue>0</d4p1:userMaxValue>
+				<d4p1:autoMinValue>false</d4p1:autoMinValue>
+				<d4p1:userMinValue>0</d4p1:userMinValue>
+				<d4p1:elementsIsInit>true</d4p1:elementsIsInit>
+				<d4p1:titleIsInit>true</d4p1:titleIsInit>
+				<d4p1:legendIsInit>true</d4p1:legendIsInit>
+				<d4p1:chartIsInit>true</d4p1:chartIsInit>
+				<d4p1:elementsChart>
+					<d4p1:left>0</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0.1351931330472103</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsChart>
+				<d4p1:elementsLegend>
+					<d4p1:left>0</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0.8690744920993221</d4p1:bottom>
+				</d4p1:elementsLegend>
+				<d4p1:elementsTitle>
+					<d4p1:left>0.8328025477707001</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0.9594017094017091</d4p1:bottom>
+				</d4p1:elementsTitle>
+				<d4p1:borderColor>style:BorderColor</d4p1:borderColor>
+				<d4p1:border width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</d4p1:border>
+				<d4p1:dataSourceDescription/>
+				<d4p1:isDataSourceMode>false</d4p1:isDataSourceMode>
+				<d4p1:isRandomizedNewValues>true</d4p1:isRandomizedNewValues>
+				<d4p1:splineMode>SmoothCurve</d4p1:splineMode>
+				<d4p1:splineStrain>94</d4p1:splineStrain>
+				<d4p1:translucencePercent>0</d4p1:translucencePercent>
+				<d4p1:funnelNeckHeightPercent>10</d4p1:funnelNeckHeightPercent>
+				<d4p1:funnelNeckWidthPercent>10</d4p1:funnelNeckWidthPercent>
+				<d4p1:funnelGapSumPercent>3</d4p1:funnelGapSumPercent>
+				<d4p1:multiStageLinkLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+				</d4p1:multiStageLinkLine>
+				<d4p1:multiStageLinkColor>#000000</d4p1:multiStageLinkColor>
+			</Settings>
+		</Attribute>
+		<Attribute name="НачалоПериода" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начало периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатТаблица" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат таблица</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КонецПериода" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конец периода</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Интервал" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Интервал</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ИнтервалПериода</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Валюта" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Валюта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтборПоВалюте" id="8">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатКурсы" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат курсы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:Chart</v8:Type>
+			</Type>
+			<Settings xmlns:d4p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d4p1:Chart">
+				<d4p1:seriesCurId>1</d4p1:seriesCurId>
+				<d4p1:pointsCurId>36</d4p1:pointsCurId>
+				<d4p1:isSeriesDesign>true</d4p1:isSeriesDesign>
+				<d4p1:realSeriesCount>0</d4p1:realSeriesCount>
+				<d4p1:realExSeriesData>
+					<d4p1:id>1</d4p1:id>
+					<d4p1:color>#991919</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>#</v8:lang>
+							<v8:content>Сводная</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realExSeriesData>
+				<d4p1:isPointsDesign>true</d4p1:isPointsDesign>
+				<d4p1:realPointCount>12</d4p1:realPointCount>
+				<d4p1:realPointData>
+					<d4p1:id>1</d4p1:id>
+					<d4p1:color>#D02A35</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 1</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>2</d4p1:id>
+					<d4p1:color>#FEE101</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rect</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 2</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>3</d4p1:id>
+					<d4p1:color>#19CC19</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Circle</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 3</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>4</d4p1:id>
+					<d4p1:color>#19B2E5</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 4</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>5</d4p1:id>
+					<d4p1:color>#1919CC</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rect</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 5</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>6</d4p1:id>
+					<d4p1:color>#CC19FF</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Circle</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 6</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>7</d4p1:id>
+					<d4p1:color>#991919</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 7</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>8</d4p1:id>
+					<d4p1:color>#FFCC19</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rect</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 8</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>9</d4p1:id>
+					<d4p1:color>#199919</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 9</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>10</d4p1:id>
+					<d4p1:color>#197FE5</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rect</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 10</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>11</d4p1:id>
+					<d4p1:color>#191999</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Circle</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 11</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>false</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:realPointData>
+					<d4p1:id>12</d4p1:id>
+					<d4p1:color>#9919E5</d4p1:color>
+					<d4p1:line width="2" gap="false">
+						<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+					</d4p1:line>
+					<d4p1:marker>Rhomb</d4p1:marker>
+					<d4p1:text>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Точка 12</v8:content>
+						</v8:item>
+					</d4p1:text>
+					<d4p1:strIsChanged>false</d4p1:strIsChanged>
+					<d4p1:isExpand>false</d4p1:isExpand>
+					<d4p1:isIndicator>false</d4p1:isIndicator>
+					<d4p1:colorPriority>true</d4p1:colorPriority>
+				</d4p1:realPointData>
+				<d4p1:curSeries>-1</d4p1:curSeries>
+				<d4p1:curPoint>11</d4p1:curPoint>
+				<d4p1:chartType>Line</d4p1:chartType>
+				<d4p1:circleLabelType>None</d4p1:circleLabelType>
+				<d4p1:labelsDelimiter>hfghgf</d4p1:labelsDelimiter>
+				<d4p1:labelsLocation>Edge</d4p1:labelsLocation>
+				<d4p1:lbFormat/>
+				<d4p1:lbpFormat/>
+				<d4p1:labelsColor>style:FieldSelectionBackColor</d4p1:labelsColor>
+				<d4p1:labelsFont ref="sys:DefaultGUIFont" height="22" kind="WindowsFont"/>
+				<d4p1:transparentLabelsBkg>false</d4p1:transparentLabelsBkg>
+				<d4p1:labelsBkgColor>auto</d4p1:labelsBkgColor>
+				<d4p1:labelsBorder width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</d4p1:labelsBorder>
+				<d4p1:labelsBorderColor>auto</d4p1:labelsBorderColor>
+				<d4p1:circleExpandMode>None</d4p1:circleExpandMode>
+				<d4p1:chart3Dcrd>SouthWest</d4p1:chart3Dcrd>
+				<d4p1:title/>
+				<d4p1:isShowTitle>true</d4p1:isShowTitle>
+				<d4p1:isShowLegend>true</d4p1:isShowLegend>
+				<d4p1:ttlBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:ttlBorder>
+				<d4p1:ttlBorderColor>style:BorderColor</d4p1:ttlBorderColor>
+				<d4p1:lgBorder width="0">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+				</d4p1:lgBorder>
+				<d4p1:lgBorderColor>style:BorderColor</d4p1:lgBorderColor>
+				<d4p1:chBorder width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">DoubleUnderline</v8ui:style>
+				</d4p1:chBorder>
+				<d4p1:chBorderColor>style:BorderColor</d4p1:chBorderColor>
+				<d4p1:transparent>false</d4p1:transparent>
+				<d4p1:bkgColor>style:FieldSelectionBackColor</d4p1:bkgColor>
+				<d4p1:isTrnspTtl>false</d4p1:isTrnspTtl>
+				<d4p1:ttlColor>style:FieldBackColor</d4p1:ttlColor>
+				<d4p1:isTrnspLeg>false</d4p1:isTrnspLeg>
+				<d4p1:legColor>style:FieldBackColor</d4p1:legColor>
+				<d4p1:isTrnspCh>false</d4p1:isTrnspCh>
+				<d4p1:chColor>style:FieldBackColor</d4p1:chColor>
+				<d4p1:ttlTxtColor>style:FormTextColor</d4p1:ttlTxtColor>
+				<d4p1:legTxtColor>style:FormTextColor</d4p1:legTxtColor>
+				<d4p1:chTxtColor>style:FormTextColor</d4p1:chTxtColor>
+				<d4p1:ttlFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:legFont ref="style:TextFont" kind="StyleItem"/>
+				<d4p1:chFont ref="style:TextFont" height="16" kind="StyleItem"/>
+				<d4p1:isShowScale>true</d4p1:isShowScale>
+				<d4p1:isShowScaleVL>true</d4p1:isShowScaleVL>
+				<d4p1:isShowSeriesScale>true</d4p1:isShowSeriesScale>
+				<d4p1:isShowPointsScale>true</d4p1:isShowPointsScale>
+				<d4p1:isShowValuesScale>true</d4p1:isShowValuesScale>
+				<d4p1:vsFormat/>
+				<d4p1:xLabelsOrientation>Auto</d4p1:xLabelsOrientation>
+				<d4p1:scaleLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+				</d4p1:scaleLine>
+				<d4p1:scaleColor>web:Gainsboro</d4p1:scaleColor>
+				<d4p1:isAutoSeriesName>true</d4p1:isAutoSeriesName>
+				<d4p1:isAutoPointName>true</d4p1:isAutoPointName>
+				<d4p1:maxMode>NotDefined</d4p1:maxMode>
+				<d4p1:maxSeries>4</d4p1:maxSeries>
+				<d4p1:maxSeriesPrc>30</d4p1:maxSeriesPrc>
+				<d4p1:spaceMode>Half</d4p1:spaceMode>
+				<d4p1:baseVal>7</d4p1:baseVal>
+				<d4p1:isOutline>false</d4p1:isOutline>
+				<d4p1:realPiePoint>0</d4p1:realPiePoint>
+				<d4p1:realStockSeries>0</d4p1:realStockSeries>
+				<d4p1:isLight>true</d4p1:isLight>
+				<d4p1:isGradient>false</d4p1:isGradient>
+				<d4p1:isTransposition>false</d4p1:isTransposition>
+				<d4p1:hideBaseVal>false</d4p1:hideBaseVal>
+				<d4p1:dataTable>false</d4p1:dataTable>
+				<d4p1:dtVerLines>true</d4p1:dtVerLines>
+				<d4p1:dtHorLines>true</d4p1:dtHorLines>
+				<d4p1:dtHAlign>Right</d4p1:dtHAlign>
+				<d4p1:dtFormat/>
+				<d4p1:dtKeys>true</d4p1:dtKeys>
+				<d4p1:paletteKind>Palette32</d4p1:paletteKind>
+				<d4p1:animation>Auto</d4p1:animation>
+				<d4p1:rebuildTime>28368830</d4p1:rebuildTime>
+				<d4p1:isTransposed>false</d4p1:isTransposed>
+				<d4p1:autoTransposition>false</d4p1:autoTransposition>
+				<d4p1:legendScrollEnable>false</d4p1:legendScrollEnable>
+				<d4p1:surfaceColor>#A90000</d4p1:surfaceColor>
+				<d4p1:radarScaleType>Circle</d4p1:radarScaleType>
+				<d4p1:gaugeValuesPresentation>Needle</d4p1:gaugeValuesPresentation>
+				<d4p1:gaugeQualityBands useTextStr="false" useTooltipStr="false"/>
+				<d4p1:beginGaugeAngle>0</d4p1:beginGaugeAngle>
+				<d4p1:endGaugeAngle>180</d4p1:endGaugeAngle>
+				<d4p1:gaugeThickness>5</d4p1:gaugeThickness>
+				<d4p1:gaugeLabelsLocation>InsideScale</d4p1:gaugeLabelsLocation>
+				<d4p1:gaugeLabelsArcDirection>false</d4p1:gaugeLabelsArcDirection>
+				<d4p1:gaugeBushThickness>4</d4p1:gaugeBushThickness>
+				<d4p1:gaugeBushColor>#A9A9A9</d4p1:gaugeBushColor>
+				<d4p1:autoMaxValue>false</d4p1:autoMaxValue>
+				<d4p1:userMaxValue>5</d4p1:userMaxValue>
+				<d4p1:autoMinValue>false</d4p1:autoMinValue>
+				<d4p1:userMinValue>7</d4p1:userMinValue>
+				<d4p1:elementsIsInit>true</d4p1:elementsIsInit>
+				<d4p1:titleIsInit>true</d4p1:titleIsInit>
+				<d4p1:legendIsInit>true</d4p1:legendIsInit>
+				<d4p1:chartIsInit>true</d4p1:chartIsInit>
+				<d4p1:elementsChart>
+					<d4p1:left>0.001597444089456869</d4p1:left>
+					<d4p1:right>0.1661341853035144</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsChart>
+				<d4p1:elementsLegend>
+					<d4p1:left>0.8328025477707001</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0.0405982905982906</d4p1:top>
+					<d4p1:bottom>0</d4p1:bottom>
+				</d4p1:elementsLegend>
+				<d4p1:elementsTitle>
+					<d4p1:left>0.8328025477707001</d4p1:left>
+					<d4p1:right>0</d4p1:right>
+					<d4p1:top>0</d4p1:top>
+					<d4p1:bottom>0.9594017094017091</d4p1:bottom>
+				</d4p1:elementsTitle>
+				<d4p1:borderColor>style:BorderColor</d4p1:borderColor>
+				<d4p1:border width="1">
+					<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+				</d4p1:border>
+				<d4p1:dataSourceDescription/>
+				<d4p1:isDataSourceMode>false</d4p1:isDataSourceMode>
+				<d4p1:isRandomizedNewValues>true</d4p1:isRandomizedNewValues>
+				<d4p1:splineStrain>95</d4p1:splineStrain>
+				<d4p1:translucencePercent>0</d4p1:translucencePercent>
+				<d4p1:funnelNeckHeightPercent>10</d4p1:funnelNeckHeightPercent>
+				<d4p1:funnelNeckWidthPercent>10</d4p1:funnelNeckWidthPercent>
+				<d4p1:funnelGapSumPercent>3</d4p1:funnelGapSumPercent>
+				<d4p1:multiStageLinkLine width="1" gap="false">
+					<v8ui:style xsi:type="v8ui:ChartLineType">Solid</v8ui:style>
+				</d4p1:multiStageLinkLine>
+				<d4p1:multiStageLinkColor>#000000</d4p1:multiStageLinkColor>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьОтчет" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать отчет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьОтчетКлиент</Action>
+		</Command>
+	</Commands>
+</Form>

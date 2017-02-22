@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<Table uuid="31d3ea26-2bb4-48fe-ad2e-284099592d8c">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceTableManager.TSQL2012.HR_EmployesCount" category="Manager">
+				<xr:TypeId>670733d5-9988-425f-a2aa-9cd786d8525f</xr:TypeId>
+				<xr:ValueId>90e4ce97-c3ac-477e-a6c7-6b75010e0fa7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTableObject.TSQL2012.HR_EmployesCount" category="Object">
+				<xr:TypeId>c9b92f3a-13ac-4c01-b7f9-afafb3195463</xr:TypeId>
+				<xr:ValueId>3a2f8d88-92c3-4e24-98d1-f2859c3965e2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTableRef.TSQL2012.HR_EmployesCount" category="Ref">
+				<xr:TypeId>7dae5886-e7dd-4eba-bdc5-6d3b8d86144c</xr:TypeId>
+				<xr:ValueId>12ad8230-164b-4888-a16d-dbbc010b286d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTableList.TSQL2012.HR_EmployesCount" category="List">
+				<xr:TypeId>84e2d364-5ebe-44a1-a61e-39fe52a32920</xr:TypeId>
+				<xr:ValueId>5ed26541-2710-4497-a82a-3b88e169541d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTableRecordSet.TSQL2012.HR_EmployesCount" category="RecordSet">
+				<xr:TypeId>34e901db-a307-4117-95be-a62781518701</xr:TypeId>
+				<xr:ValueId>ad2ff5b8-6a97-4d46-80a3-a5bdcf958227</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTableRecordKey.TSQL2012.HR_EmployesCount" category="RecordKey">
+				<xr:TypeId>0c3d466b-9d1b-429f-a90c-7e053df5f726</xr:TypeId>
+				<xr:ValueId>14de7a7d-d316-4503-b4fe-11634d13a86f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTableRecordManager.TSQL2012.HR_EmployesCount" category="RecordManager">
+				<xr:TypeId>5d2ec077-a792-4afb-95eb-6ac4ac55ad51</xr:TypeId>
+				<xr:ValueId>57ebd3ca-ef3a-4c8c-8049-d1eac6f8df51</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>HR_EmployesCount</Name>
+			<Synonym/>
+			<Comment/>
+			<TableType>Expression</TableType>
+			<NameInDataSource/>
+			<ExpressionInDataSource>HR.EmployesCount(&amp;1, &amp;2)</ExpressionInDataSource>
+			<TableDataType>NonobjectData</TableDataType>
+			<KeyFields/>
+			<PresentationField/>
+			<ParentField/>
+			<UnfilledParentValue xsi:nil="true"/>
+			<Characteristics/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<QuickChoice>false</QuickChoice>
+			<InputByString/>
+			<CreateOnInput>Auto</CreateOnInput>
+			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
+			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<DefaultObjectForm/>
+			<DefaultRecordForm/>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<ObjectPresentation/>
+			<ExtendedObjectPresentation/>
+			<RecordPresentation/>
+			<ExtendedRecordPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ReadOnly>true</ReadOnly>
+			<TransactionsIsolationLevel>Auto</TransactionsIsolationLevel>
+			<DataVersionField/>
+			<EditType>InDialog</EditType>
+			<BasedOn/>
+			<DataLockFields/>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Field uuid="b82e049c-7033-4cec-a1d2-143170a4869d">
+				<Properties>
+					<Name>Totalqnty</Name>
+					<Synonym/>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:decimal">0</FillValue>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<ChoiceForm/>
+					<NameInDataSource>Totalqnty</NameInDataSource>
+					<ReadOnly>false</ReadOnly>
+					<AllowNull>true</AllowNull>
+				</Properties>
+			</Field>
+		</ChildObjects>
+	</Table>
+</MetaDataObject>

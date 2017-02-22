@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<CommandsVisibility>
+		<Command name="Catalog.ПлатежныеСистемы.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Валюты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.КурсыВалют.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводСредств.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:3e79d21f-a05e-41c3-b58f-9b0fe6059e11">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводСредств.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Catalog.ПлатежныеСистемы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Валюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.КурсыВалют.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВводСредств.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.КонвертацияВалют</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.КонвертацияВалют</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="0:3e79d21f-a05e-41c3-b58f-9b0fe6059e11">
+			<CommandGroup>CommandGroup.КонвертацияВалют</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.КонвертацияВалют</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Catalog.ПлатежныеСистемы.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Валюты.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Номенклатура.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.КурсыВалют.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Document.ВводСредств.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.КонвертацияВалют</CommandGroup>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.КонвертацияВалют</CommandGroup>
+		</Command>
+		<Command name="0:3e79d21f-a05e-41c3-b58f-9b0fe6059e11">
+			<CommandGroup>CommandGroup.КонвертацияВалют</CommandGroup>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.КонвертацияВалют</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.Справочники</Group>
+		<Group>CommandGroup.КонвертацияВалют</Group>
+		<Group>NavigationPanelSeeAlso</Group>
+	</GroupsOrder>
+</CommandInterface>

@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<CommonAttribute uuid="d2a97cf0-d034-4680-b9b6-b82a2ce76f90">
+		<Properties>
+			<Name>Комментарий</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Комментарии</v8:Type>
+			</Type>
+			<PasswordMode>false</PasswordMode>
+			<Format/>
+			<EditFormat/>
+			<ToolTip/>
+			<MarkNegatives>false</MarkNegatives>
+			<Mask/>
+			<MultiLine>false</MultiLine>
+			<ExtendedEdit>false</ExtendedEdit>
+			<MinValue xsi:nil="true"/>
+			<MaxValue xsi:nil="true"/>
+			<FillFromFillingValue>false</FillFromFillingValue>
+			<FillValue xsi:nil="true"/>
+			<FillChecking>DontCheck</FillChecking>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<ChoiceParameterLinks/>
+			<ChoiceParameters/>
+			<QuickChoice>Auto</QuickChoice>
+			<CreateOnInput>Auto</CreateOnInput>
+			<ChoiceForm/>
+			<LinkByType/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+			<Content>
+				<xr:Item>
+					<xr:Metadata>844df47b-6449-4695-b24f-74c422a31821</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
+					<xr:Metadata>93556d5a-2d22-41c1-84f5-3ce6c3a3b3ce</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
+					<xr:Metadata>Document.ВыводСредств</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+			</Content>
+			<AutoUse>DontUse</AutoUse>
+			<DataSeparation>DontUse</DataSeparation>
+			<SeparatedDataUse>Independently</SeparatedDataUse>
+			<DataSeparationValue/>
+			<DataSeparationUse/>
+			<ConditionalSeparation/>
+			<UsersSeparation>DontUse</UsersSeparation>
+			<AuthenticationSeparation>DontUse</AuthenticationSeparation>
+			<Indexing>DontIndex</Indexing>
+			<FullTextSearch>Use</FullTextSearch>
+		</Properties>
+	</CommonAttribute>
+</MetaDataObject>

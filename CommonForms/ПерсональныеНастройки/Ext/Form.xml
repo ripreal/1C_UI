@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаписатьИЗакрыть" id="3">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Button name="ФормаЗаписать" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Записать</CommandName>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="11">
+			<HorizontalStretch>false</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="12"/>
+			<ChildItems>
+				<InputField name="ОсновнаяПлатежнаяСистема" id="5">
+					<DataPath>ОсновнаяПлатежнаяСистема</DataPath>
+					<ContextMenu name="ОсновнаяПлатежнаяСистемаКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ОсновнаяПлатежнаяСистемаРасширеннаяПодсказка" id="7"/>
+				</InputField>
+				<InputField name="ОсновнаяВалюта" id="8">
+					<DataPath>ОсновнаяВалюта</DataPath>
+					<ContextMenu name="ОсновнаяВалютаКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ОсновнаяВалютаРасширеннаяПодсказка" id="10"/>
+				</InputField>
+				<InputField name="ОсновнойИсточникСредств" id="13">
+					<DataPath>ОсновнойИсточникСредств</DataPath>
+					<ContextMenu name="ОсновнойИсточникСредствКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="ОсновнойИсточникСредствРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ОбновлятьКурсыАвтоматически" id="18">
+			<DataPath>ОбновлятьКурсыАвтоматически</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОбновлятьКурсыАвтоматическиКонтекстноеМеню" id="19"/>
+			<ExtendedTooltip name="ОбновлятьКурсыАвтоматическиРасширеннаяПодсказка" id="20"/>
+		</CheckBoxField>
+		<Button name="СброситьАктивныеДашборды" id="16">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.СброситьНастройкиДашбордов</CommandName>
+			<ExtendedTooltip name="СброситьАктивныеДашбордыРасширеннаяПодсказка" id="17"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ОсновнаяПлатежнаяСистема" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная платежная система</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ПлатежныеСистемы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсновнаяВалюта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основная валюта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Валюты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсновнойИсточникСредств" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной источник средств</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВидыИсточниковСредств</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбновлятьКурсыАвтоматически" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновлять курсы автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Записать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Записать</Action>
+		</Command>
+		<Command name="ЗаписатьИЗакрыть" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьИЗакрыть</Action>
+		</Command>
+		<Command name="СброситьНастройкиДашбордов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить настройки дашбордов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить настройки дашбордов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СброситьНастройкиДашбордов</Action>
+		</Command>
+	</Commands>
+</Form>

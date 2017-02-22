@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Главное" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Главное</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Главное</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>false</HorizontalStretch>
+			<VerticalStretch>false</VerticalStretch>
+			<ExtendedTooltip name="ГлавноеРасширеннаяПодсказка" id="16"/>
+			<Events>
+				<Event name="OnCurrentPageChange">НастройкиПриСменеСтраницы</Event>
+			</Events>
+			<ChildItems>
+				<Page name="АвторизацияСервера" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авторизация</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Авторизация сервера</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="АвторизацияСервераРасширеннаяПодсказка" id="5"/>
+					<ChildItems>
+						<InputField name="ТипСУБД" id="1">
+							<DataPath>ТипСУБД</DataPath>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ContextMenu name="ТипСУБДКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ТипСУБДРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Сервер" id="6">
+							<DataPath>Сервер</DataPath>
+							<ContextMenu name="СерверКонтекстноеМеню" id="7"/>
+							<ExtendedTooltip name="СерверРасширеннаяПодсказка" id="8"/>
+						</InputField>
+						<InputField name="Логин" id="9">
+							<DataPath>Логин</DataPath>
+							<ContextMenu name="ЛогинКонтекстноеМеню" id="10"/>
+							<ExtendedTooltip name="ЛогинРасширеннаяПодсказка" id="11"/>
+						</InputField>
+						<InputField name="Пароль" id="12">
+							<DataPath>Пароль</DataPath>
+							<PasswordMode>true</PasswordMode>
+							<ContextMenu name="ПарольКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="14"/>
+						</InputField>
+						<CheckBoxField name="ПодключатьсяПриОоткрытии" id="38">
+							<DataPath>ПодключатьсяАвтоматически</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПодключатьсяПриОоткрытииКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="ПодключатьсяПриОоткрытииРасширеннаяПодсказка" id="40"/>
+						</CheckBoxField>
+						<Button name="ПодключитьсяБД" id="41">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ПодключитьсяБД</CommandName>
+							<ExtendedTooltip name="ПодключитьсяБДРасширеннаяПодсказка" id="42"/>
+						</Button>
+					</ChildItems>
+				</Page>
+				<Page name="СоставОбмена" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состав данных для обмена</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состав обмена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СоставОбменаРасширеннаяПодсказка" id="18"/>
+					<ChildItems>
+						<Table name="ДанныеОбмена" id="19">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДанныеОбмена</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДанныеОбменаКонтекстноеМеню" id="20"/>
+							<AutoCommandBar name="ДанныеОбменаКоманднаяПанель" id="21">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДанныеОбменаРасширеннаяПодсказка" id="22"/>
+							<SearchStringAddition name="ДанныеОбменаСтрокаПоиска" id="23">
+								<AdditionSource>
+									<Item>ДанныеОбмена</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеОбменаСтрокаПоискаКонтекстноеМеню" id="24"/>
+								<ExtendedTooltip name="ДанныеОбменаСтрокаПоискаРасширеннаяПодсказка" id="25"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДанныеОбменаСостояниеПросмотра" id="26">
+								<AdditionSource>
+									<Item>ДанныеОбмена</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеОбменаСостояниеПросмотраКонтекстноеМеню" id="27"/>
+								<ExtendedTooltip name="ДанныеОбменаСостояниеПросмотраРасширеннаяПодсказка" id="28"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДанныеОбменаУправлениеПоиском" id="29">
+								<AdditionSource>
+									<Item>ДанныеОбмена</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДанныеОбменаУправлениеПоискомКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="ДанныеОбменаУправлениеПоискомРасширеннаяПодсказка" id="31"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<CheckBoxField name="ДанныеОбменаИспользуется" id="32">
+									<DataPath>ДанныеОбмена.Используется</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДанныеОбменаИспользуетсяКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ДанныеОбменаИспользуетсяРасширеннаяПодсказка" id="34"/>
+								</CheckBoxField>
+								<InputField name="ДанныеОбменаЭлементОбмена" id="35">
+									<DataPath>ДанныеОбмена.ЭлементОбмена</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДанныеОбменаЭлементОбменаКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ДанныеОбменаЭлементОбменаРасширеннаяПодсказка" id="37"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаСтатуса" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа статуса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа статуса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСтатусаРасширеннаяПодсказка" id="59"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаОК" id="60">
+					<Width>2</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка ОК</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КартинкаОККонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="КартинкаОКРасширеннаяПодсказка" id="62"/>
+				</PictureDecoration>
+				<PictureDecoration name="КартинкаВыполнения" id="43">
+					<Visible>false</Visible>
+					<Width>2</Width>
+					<Height>1</Height>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка выполнения</v8:content>
+						</v8:item>
+					</Title>
+					<PictureSize>Stretch</PictureSize>
+					<Picture>
+						<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаВыполненияКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="КартинкаВыполненияРасширеннаяПодсказка" id="45"/>
+				</PictureDecoration>
+				<LabelDecoration name="ТекстСтатус" id="51">
+					<ContextMenu name="ТекстСтатусКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ТекстСтатусРасширеннаяПодсказка" id="53"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ОбменСБД</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТипСУБД" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип СУБД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Сервер" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сервер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>Сервер</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Логин" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Логин</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>Логин</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Пароль" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>Пароль</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДанныеОбмена" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Используется" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используется</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭлементОбмена" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент обмена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПодключатьсяАвтоматически" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключаться автоматически</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПодключатьсяАвтоматически</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="АдресХранилища" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес хранилища</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="База" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>База</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>База</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ИдентификаторЗадания" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусПодключения" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус подключения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусыПодключения</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПодключитьсяБД" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться к БД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подключиться БД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодключитьсяБД</Action>
+		</Command>
+	</Commands>
+</Form>

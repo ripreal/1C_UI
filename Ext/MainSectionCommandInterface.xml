@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<CommandsVisibility>
+		<Command name="CommonCommand.НачальнаяСтраница">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводСредств.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВводСредств.StandardCommand.Create">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ВводВыводДенегВЭПС.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.ДвижениеСредств.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.КурсыВалюты.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Report.КурсыТовара.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonForm.НастройкиВалют.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonForm.ПерсональныеНастройки.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="CommonCommand.НачальнаяСтраница">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ВводСредств.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Document.ВводСредств.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ВводВыводДенегВЭПС.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.ДвижениеСредств.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.КурсыВалюты.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="Report.КурсыТовара.StandardCommand.Open">
+			<CommandGroup>ActionsPanelReports</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonForm.НастройкиВалют.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonForm.ПерсональныеНастройки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.ВводСредств.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ВыводСредств.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ПереводМеждуЭПС.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Document.ВводСредств.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>CommandGroup.Справочники</Group>
+		<Group>CommandGroup.КонвертацияВалют</Group>
+		<Group>ActionsPanelCreate</Group>
+	</GroupsOrder>
+</CommandInterface>

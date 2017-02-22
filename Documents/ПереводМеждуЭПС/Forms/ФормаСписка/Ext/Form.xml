@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Table name="Список" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+			<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Дата" id="16">
+					<DataPath>Список.Date</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="18"/>
+				</LabelField>
+				<LabelField name="Номер" id="19">
+					<DataPath>Список.Number</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="НомерКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="21"/>
+				</LabelField>
+				<ColumnGroup name="ГруппаВалютаИсточник" id="28">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Из</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Валюта-источник</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderHorizontalAlign>Left</HeaderHorizontalAlign>
+					<ExtendedTooltip name="ГруппаВалютаИсточникРасширеннаяПодсказка" id="29"/>
+					<ChildItems>
+						<LabelField name="ВалютаИсточник" id="22">
+							<DataPath>Список.ВалютаИсточник</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Из</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Валюта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<ShowInHeader>false</ShowInHeader>
+							<ContextMenu name="ВалютаИсточникКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ВалютаИсточникРасширеннаяПодсказка" id="24"/>
+						</LabelField>
+						<LabelField name="СуммаИсточник" id="30">
+							<DataPath>Список.СуммаИсточник</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сумма</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<ShowInHeader>false</ShowInHeader>
+							<ContextMenu name="СуммаИсточникКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="СуммаИсточникРасширеннаяПодсказка" id="32"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ГруппаВалютаПриемник" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа валюта приемник</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderHorizontalAlign>Left</HeaderHorizontalAlign>
+					<ExtendedTooltip name="ГруппаВалютаПриемникРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<LabelField name="ВалютаПриемник" id="35">
+							<DataPath>Список.ВалютаПриемник</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<ShowInHeader>false</ShowInHeader>
+							<ContextMenu name="ВалютаПриемникКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ВалютаПриемникРасширеннаяПодсказка" id="37"/>
+						</LabelField>
+						<LabelField name="СуммаПриемник" id="38">
+							<DataPath>Список.СуммаПриемник</DataPath>
+							<HorizontalAlign>Left</HorizontalAlign>
+							<ShowInHeader>false</ShowInHeader>
+							<ContextMenu name="СуммаПриемникКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="СуммаПриемникРасширеннаяПодсказка" id="40"/>
+						</LabelField>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаИтоги" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа итоги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа итоги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>web:Gainsboro</BackColor>
+			<ExtendedTooltip name="ГруппаИтогиРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаПлатежнаяСистема1" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа платежная система1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа платежная система1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПлатежнаяСистема1РасширеннаяПодсказка" id="44"/>
+					<ChildItems>
+						<LabelDecoration name="ПлатежнаяСистема1" id="45">
+							<Width>15</Width>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Платежная система&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПлатежнаяСистема1КонтекстноеМеню" id="46"/>
+							<ExtendedTooltip name="ПлатежнаяСистема1РасширеннаяПодсказка" id="47"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаВалюта11" id="48">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалюта11РасширеннаяПодсказка" id="49"/>
+							<ChildItems>
+								<LabelDecoration name="СредстваВалюта11" id="50">
+									<Width>4</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;RUB&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваВалюта11КонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="СредстваВалюта11РасширеннаяПодсказка" id="52"/>
+								</LabelDecoration>
+								<LabelDecoration name="СредстваСумма11" id="53">
+									<Width>6</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>9 999 999</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваСумма11КонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="СредстваСумма11РасширеннаяПодсказка" id="55"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВалюта12" id="56">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалюта12РасширеннаяПодсказка" id="57"/>
+							<ChildItems>
+								<LabelDecoration name="СредстваВалюта12" id="58">
+									<Width>4</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;RUB&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваВалюта12КонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="СредстваВалюта12РасширеннаяПодсказка" id="60"/>
+								</LabelDecoration>
+								<LabelDecoration name="СредстваСумма12" id="61">
+									<Width>6</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>9 999 999</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваСумма12КонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="СредстваСумма12РасширеннаяПодсказка" id="63"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВалюта13" id="64">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалюта13РасширеннаяПодсказка" id="65"/>
+							<ChildItems>
+								<LabelDecoration name="СредстваВалюта13" id="66">
+									<Width>4</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;RUB&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваВалюта13КонтекстноеМеню" id="67"/>
+									<ExtendedTooltip name="СредстваВалюта13РасширеннаяПодсказка" id="68"/>
+								</LabelDecoration>
+								<LabelDecoration name="СредстваСумма13" id="69">
+									<Width>6</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>9 999 999</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваСумма13КонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="СредстваСумма13РасширеннаяПодсказка" id="71"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПлатежнаяСистема2" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа платежная система1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа платежная система1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПлатежнаяСистема2РасширеннаяПодсказка" id="73"/>
+					<ChildItems>
+						<LabelDecoration name="ПлатежнаяСистема2" id="74">
+							<Width>15</Width>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Платежная система&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПлатежнаяСистема2КонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="ПлатежнаяСистема2РасширеннаяПодсказка" id="76"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаВалюта21" id="77">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалюта21РасширеннаяПодсказка" id="78"/>
+							<ChildItems>
+								<LabelDecoration name="СредстваВалюта21" id="79">
+									<Width>4</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;RUB&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваВалюта21КонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="СредстваВалюта21РасширеннаяПодсказка" id="81"/>
+								</LabelDecoration>
+								<LabelDecoration name="СредстваСумма21" id="82">
+									<Width>6</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>9 999 999</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваСумма21КонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="СредстваСумма21РасширеннаяПодсказка" id="84"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВалюта22" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалюта22РасширеннаяПодсказка" id="86"/>
+							<ChildItems>
+								<LabelDecoration name="СредстваВалюта22" id="87">
+									<Width>4</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;RUB&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваВалюта22КонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="СредстваВалюта22РасширеннаяПодсказка" id="89"/>
+								</LabelDecoration>
+								<LabelDecoration name="СредстваСумма22" id="90">
+									<Width>6</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>9 999 999</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваСумма22КонтекстноеМеню" id="91"/>
+									<ExtendedTooltip name="СредстваСумма22РасширеннаяПодсказка" id="92"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВалюта23" id="93">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалюта23РасширеннаяПодсказка" id="94"/>
+							<ChildItems>
+								<LabelDecoration name="СредстваВалюта23" id="95">
+									<Width>4</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;RUB&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваВалюта23КонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="СредстваВалюта23РасширеннаяПодсказка" id="97"/>
+								</LabelDecoration>
+								<LabelDecoration name="СредстваСумма23" id="98">
+									<Width>6</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>9 999 999</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваСумма23КонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="СредстваСумма23РасширеннаяПодсказка" id="100"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПлатежнаяСистема3" id="101">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа платежная система1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа платежная система1</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПлатежнаяСистема3РасширеннаяПодсказка" id="102"/>
+					<ChildItems>
+						<LabelDecoration name="ПлатежнаяСистема3" id="103">
+							<Width>15</Width>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>&lt;Платежная система&gt;</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПлатежнаяСистема3КонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="ПлатежнаяСистема3РасширеннаяПодсказка" id="105"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаВалюта31" id="106">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалюта31РасширеннаяПодсказка" id="107"/>
+							<ChildItems>
+								<LabelDecoration name="СредстваВалюта31" id="108">
+									<Width>4</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;RUB&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваВалюта31КонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="СредстваВалюта31РасширеннаяПодсказка" id="110"/>
+								</LabelDecoration>
+								<LabelDecoration name="СредстваСумма31" id="111">
+									<Width>6</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>9 999 999</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваСумма31КонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="СредстваСумма31РасширеннаяПодсказка" id="113"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВалюта32" id="114">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалюта32РасширеннаяПодсказка" id="115"/>
+							<ChildItems>
+								<LabelDecoration name="СредстваВалюта32" id="116">
+									<Width>4</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;RUB&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваВалюта32КонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="СредстваВалюта32РасширеннаяПодсказка" id="118"/>
+								</LabelDecoration>
+								<LabelDecoration name="СредстваСумма32" id="119">
+									<Width>6</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>9 999 999</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваСумма32КонтекстноеМеню" id="120"/>
+									<ExtendedTooltip name="СредстваСумма32РасширеннаяПодсказка" id="121"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВалюта33" id="122">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа валюта11</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВалюта33РасширеннаяПодсказка" id="123"/>
+							<ChildItems>
+								<LabelDecoration name="СредстваВалюта33" id="124">
+									<Width>4</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;RUB&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваВалюта33КонтекстноеМеню" id="125"/>
+									<ExtendedTooltip name="СредстваВалюта33РасширеннаяПодсказка" id="126"/>
+								</LabelDecoration>
+								<LabelDecoration name="СредстваСумма33" id="127">
+									<Width>6</Width>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>9 999 999</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СредстваСумма33КонтекстноеМеню" id="128"/>
+									<ExtendedTooltip name="СредстваСумма33РасширеннаяПодсказка" id="129"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>false</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<MainTable>Document.ПереводМеждуЭПС</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+</Form>

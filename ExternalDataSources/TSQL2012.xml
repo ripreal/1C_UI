@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<ExternalDataSource uuid="06e11e71-35e4-479a-b460-d78287937afd">
+		<InternalInfo>
+			<xr:GeneratedType name="ExternalDataSourceManager.TSQL2012" category="Manager">
+				<xr:TypeId>ba3600f1-cd5f-41a8-ab04-d867ed3678b9</xr:TypeId>
+				<xr:ValueId>c0931aa1-e510-4e45-a006-200f4b284f08</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceTablesManager.TSQL2012" category="TablesManager">
+				<xr:TypeId>2430c4cb-aaa3-45c1-8498-5d7c5bd1e5eb</xr:TypeId>
+				<xr:ValueId>c48d2e8d-24ac-4a5f-a2f7-11e201f20d0f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExternalDataSourceCubesManager.TSQL2012" category="CubesManager">
+				<xr:TypeId>04c6a924-cbf7-4e87-a164-fc2deb39123c</xr:TypeId>
+				<xr:ValueId>f06259a3-8bec-410a-9f0a-d8444d54795c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>TSQL2012</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>TSQL2012</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DataLockControlMode>Automatic</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Table>HR_Employees</Table>
+			<Table>HR_EmployesCount</Table>
+			<Function uuid="d4fd40d1-cabf-4a7e-a8af-2f846e37851a">
+				<Properties>
+					<Name>dbo_AddEmployee</Name>
+					<Synonym/>
+					<Comment/>
+					<ReturnValue>false</ReturnValue>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<ExpressionInDataSource>dbo.AddEmployee(&amp;1, &amp;2)</ExpressionInDataSource>
+				</Properties>
+			</Function>
+		</ChildObjects>
+	</ExternalDataSource>
+</MetaDataObject>
