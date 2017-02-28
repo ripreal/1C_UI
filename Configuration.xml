@@ -127,6 +127,8 @@
 			<Subsystem>Системная</Subsystem>
 			<Subsystem>ВалютныеОперации</Subsystem>
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
+			<Subsystem>Тестирование</Subsystem>
+			<Subsystem>Дашборды</Subsystem>
 			<StyleItem>ЗаблокированныйРеквизитЦвет</StyleItem>
 			<StyleItem>КонтактнаяИнформацияСРедактированиемВДиалогеЦвет</StyleItem>
 			<StyleItem>ПользовательВыбранный</StyleItem>
@@ -430,6 +432,7 @@
 			<XDTOPackage>V8AddinBundle</XDTOPackage>
 			<XDTOPackage>КонтактнаяИнформация</XDTOPackage>
 			<WebService>InterfaceVersion</WebService>
+			<HTTPService>ДашбордыДанные</HTTPService>
 			<WSReference>CBR_DailyInfoWebServ</WSReference>
 			<EventSubscription>ВыполнитьДействияПослеОтправкиДанныхУзлаВРаспределеннойИнформационнойБазе</EventSubscription>
 			<EventSubscription>ВыполнитьДействияПослеПолученияДанныхУзлаВРаспределеннойИнформационнойБазе</EventSubscription>
@@ -594,6 +597,8 @@
 			<DataProcessor>ПанельАдминистрированияБСП</DataProcessor>
 			<DataProcessor>ПанельАдминистрированияУИ</DataProcessor>
 			<DataProcessor>ИспользованиеHTTP</DataProcessor>
+			<DataProcessor>ТестДашбордов</DataProcessor>
+			<DataProcessor>xddTestRunner</DataProcessor>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
 			<InformationRegister>ВерсииПодсистем</InformationRegister>

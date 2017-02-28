@@ -320,18 +320,6 @@
 					</xr:CharacteristicValues>
 				</xr:Characteristic>
 				<xr:Characteristic>
-					<xr:CharacteristicTypes from="">
-						<xr:KeyField>0:00949768-5833-4fe2-8752-b009d1bceef8</xr:KeyField>
-						<xr:TypesFilterField>-8</xr:TypesFilterField>
-						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef">Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_Пользователи</xr:TypesFilterValue>
-					</xr:CharacteristicTypes>
-					<xr:CharacteristicValues from="">
-						<xr:ObjectField>0:cb954476-c551-4a06-9bcd-18d67ba47dc8</xr:ObjectField>
-						<xr:TypeField>0:79201015-bfae-463e-81f1-0ae2d3066f3f</xr:TypeField>
-						<xr:ValueField>0:ab7ef662-71c1-4d51-9f0f-ea8c5ea3df8a</xr:ValueField>
-					</xr:CharacteristicValues>
-				</xr:Characteristic>
-				<xr:Characteristic>
 					<xr:CharacteristicTypes from="Catalog.ВидыКонтактнойИнформации">
 						<xr:KeyField>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Ref</xr:KeyField>
 						<xr:TypesFilterField>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Parent</xr:TypesFilterField>

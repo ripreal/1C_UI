@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<Subsystem uuid="bc396e9d-eab0-46f0-9581-36f592c9db18">
+		<Properties>
+			<Name>Дашборды</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дашборды</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Дашборды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыВиджетКурсаВалют</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыВиджетКурсаТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыВсегоЗаработано</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыДвижениеДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыДинамикаКапитала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыКурсыВалют</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыКурсыТоваров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыСтоимостьКапитала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДашбордыФормыКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.Дашборды</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.ДашбордыДанные</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
