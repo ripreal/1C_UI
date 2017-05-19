@@ -332,7 +332,7 @@
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектов</CommonModule>
 			<CommonModule>ЗапросыВспомогательныеДанные</CommonModule>
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовКлиент</CommonModule>
-			<CommonModule>ИнтерфейсHTTPЗапросовКлиентСервер</CommonModule>
+			<CommonModule>ИнтерфейсHTTPЗапросовСервер</CommonModule>
 			<CommonModule>ИнтерфейсSQLДрайвера</CommonModule>
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовПереопределяемый</CommonModule>
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовСлужебный</CommonModule>
@@ -341,7 +341,7 @@
 			<CommonModule>ИнтеграцияСтандартныхПодсистем</CommonModule>
 			<CommonModule>КонтрольДинамическогоОбновленияКонфигурацииВызовСервера</CommonModule>
 			<CommonModule>КонтрольДинамическогоОбновленияКонфигурацииСлужебный</CommonModule>
-			<CommonModule>ОбновлениеБазы</CommonModule>
+			<CommonModule>ОбновлениеИнформационнойБазыУИ</CommonModule>
 			<CommonModule>ОбновлениеБазыОбработчики</CommonModule>
 			<CommonModule>КонтрольДинамическогоОбновленияКонфигурацииСлужебныйКлиент</CommonModule>
 			<CommonModule>НастройкаРазрешенийНаИспользованиеВнешнихРесурсовВызовСервера</CommonModule>

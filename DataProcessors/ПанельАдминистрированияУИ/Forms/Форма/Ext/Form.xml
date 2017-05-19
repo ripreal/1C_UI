@@ -23,7 +23,6 @@
 					<v8:content>Главное</v8:content>
 				</v8:item>
 			</Title>
-			<TitleFont ref="sys:DefaultGUIFont" height="11" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -34,6 +33,19 @@
 			<Representation>NormalSeparation</Representation>
 			<ExtendedTooltip name="ГруппаГлавноеРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
+				<Button name="ПараметрыПроксиСервера" id="18">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.ПараметрыПроксиСервера</CommandName>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<ExtendedTooltip name="ПараметрыПроксиСервераРасширеннаяПодсказка" id="19">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Если доступ в интернет выполняется через прокси, то для работы сервисов загрузки курсов валют необходимо указать параметры прокси сервера</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</Button>
 				<Button name="НастройкиВалют" id="3">
 					<Type>Hyperlink</Type>
 					<CommandName>Form.Command.НастройкиВалют</CommandName>
@@ -62,29 +74,47 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<CheckBoxField name="ИспользоватьДополнительныеРеквизитыИСведения" id="9">
-			<DataPath>ИспользоватьДополнительныеРеквизитыИСведения</DataPath>
-			<TitleLocation>Right</TitleLocation>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ИспользоватьДополнительныеРеквизитыИСведенияКонтекстноеМеню" id="10"/>
-			<ExtendedTooltip name="ИспользоватьДополнительныеРеквизитыИСведенияРасширеннаяПодсказка" id="11"/>
-			<Events>
-				<Event name="OnChange">ИспользоватьДополнительныеРеквизитыИСведенияПриИзменении</Event>
-			</Events>
-		</CheckBoxField>
-		<Button name="НаборыДополнительныхРеквизитовИСведений" id="12">
-			<Type>Hyperlink</Type>
-			<CommandName>Form.Command.НаборыДополнительныхРеквизитовИСведений</CommandName>
-			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-			<ExtendedTooltip name="НаборыДополнительныхРеквизитовИСведенийРасширеннаяПодсказка" id="13">
-				<Title formatted="false">
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Добавление и удаление реквизитов</v8:content>
-					</v8:item>
-				</Title>
-			</ExtendedTooltip>
-		</Button>
+		<UsualGroup name="ГруппаДополнительныеРЕквизитыИСведения" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты и сведения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа дополнительные р еквизиты и сведения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаДополнительныеРЕквизитыИСведенияРасширеннаяПодсказка" id="17"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьДополнительныеРеквизитыИСведения" id="9">
+					<DataPath>ИспользоватьДополнительныеРеквизитыИСведения</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьДополнительныеРеквизитыИСведенияКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ИспользоватьДополнительныеРеквизитыИСведенияРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьДополнительныеРеквизитыИСведенияПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<Button name="НаборыДополнительныхРеквизитовИСведений" id="12">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.НаборыДополнительныхРеквизитовИСведений</CommandName>
+					<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+					<ExtendedTooltip name="НаборыДополнительныхРеквизитовИСведенийРасширеннаяПодсказка" id="13">
+						<Title formatted="false">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Добавление и удаление реквизитов</v8:content>
+							</v8:item>
+						</Title>
+					</ExtendedTooltip>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -150,6 +180,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НаборыДополнительныхРеквизитовИСведений</Action>
+		</Command>
+		<Command name="ПараметрыПроксиСервера" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры прокси сервера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры прокси сервера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПараметрыПроксиСервера</Action>
 		</Command>
 	</Commands>
 </Form>
